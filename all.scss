@@ -1,7 +1,7 @@
 @import "bootstrap/bootstrap";
 @import "index";
 @import "faq";
-
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bricolage+Grotesque&family=Castoro:ital@1&family=Noto+Sans+TC&display=swap');
 
 
 .header {
@@ -10,4 +10,19 @@
 
 a {
     color: 000;
+}
+
+.main {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: 'Amatic SC', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Castoro', serif;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.footer-img {
+    background-position: center center;
+    background-size: 50%;
 }
