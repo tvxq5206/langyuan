@@ -623,8 +623,38 @@ $utilities: map-merge(
         visible: visible,
         invisible: hidden,
       )
-    )
+    ),
     // scss-docs-end utils-visibility
+    //浪圓 navbar 專用區塊
+    "border-radius": (
+      property: border-radius,
+      class: bd-r,
+      values: (
+        navbar: 0 0 0 20px,
+      )
+    ),
+    "padding-navbar-menu": (
+      property: padding,
+      class: pd,
+      values: (
+        navbar-a: 40px 20px,
+        navbar-py: 0px 60px,
+      )
+    ),
+    "margin-right-navbar-logo":(
+      property: margin-left,
+      class: mar-lef,
+      values: (
+        60: 60px,
+      )
+    ),
+    "navbar-reset":(
+      property: padding,
+      class: pad-res,
+      values: (
+        x0: 0px 0px,
+      )
+    )
   ),
   $utilities
 );

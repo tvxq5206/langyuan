@@ -8025,6 +8025,26 @@ textarea.form-control-lg {
   visibility: hidden !important;
 }
 
+.bd-r-navbar {
+  border-radius: 0 0 0 20px !important;
+}
+
+.pd-navbar-a {
+  padding: 40px 20px !important;
+}
+
+.pd-navbar-py {
+  padding: 0px 60px !important;
+}
+
+.mar-lef-60 {
+  margin-left: 60px !important;
+}
+
+.pad-res-x0 {
+  padding: 0px 0px !important;
+}
+
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;
@@ -10557,6 +10577,44 @@ textarea.form-control-lg {
 
 .faq {
   color: #000;
+}
+
+.nav .menu-item {
+  position: relative;
+  padding: 10px 0 0;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1;
+  transition: padding 0.2s ease;
+  transition-delay: 0.1s;
+}
+
+.nav .menu-item .nav-item {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 28px;
+  height: 28px; /* 调整图标大小 */
+  background: url("material/other/cat-paw.svg") no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.7; /* 初始透明度 */
+  transition: opacity 0.1s ease, top 0.1s ease;
+}
+
+.nav .menu-item .nav-item:hover {
+  padding-top: 0;
+  padding-bottom: 10px;
+  opacity: 1; /* 悬停时完全显示图标 */
+}
+
+.nav .menu-item .nav-item:hover::after {
+  top: 25px;
+  opacity: 1;
+  transition: top 0.1s ease; /* 添加 top 的渐变效果 */
 }
 
 .header {
