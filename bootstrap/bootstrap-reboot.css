@@ -39,6 +39,7 @@
   --bs-secondary2: #6C584C;
   --bs-secondary3: #F0E8E0;
   --bs-secondary4: #EDDDD0;
+  --bs-gray: #202020;
   --bs-primary-rgb: 228, 165, 42;
   --bs-secondary1-rgb: 169, 132, 103;
   --bs-success-rgb: 25, 135, 84;
@@ -50,6 +51,7 @@
   --bs-secondary2-rgb: 108, 88, 76;
   --bs-secondary3-rgb: 240, 232, 224;
   --bs-secondary4-rgb: 237, 221, 208;
+  --bs-gray-rgb: 32, 32, 32;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
