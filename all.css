@@ -10575,8 +10575,8 @@ textarea.form-control-lg {
   width: 500px;
 }
 
-.faq {
-  color: #000;
+.faq-container {
+  width: 800px;
 }
 
 .nav-item {
