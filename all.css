@@ -10579,50 +10579,31 @@ textarea.form-control-lg {
   color: #000;
 }
 
-.nav .menu-item {
-  position: relative;
-  padding: 10px 0 0;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 1;
-  transition: padding 0.2s ease;
-  transition-delay: 0.1s;
+.nav-item {
+  display: inline-block;
 }
 
-.nav .menu-item .nav-item {
+.nav-item {
+  display: block;
+  text-decoration: none;
+  position: relative;
+}
+
+/*.nav-item:hover, .nav-item.selected{
+    color:red;
+  }*/
+.nav-item.selected:before, .nav-item:hover:before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 28px;
-  height: 28px; /* 调整图标大小 */
+  height: 28px;
   background: url("material/other/cat-paw.svg") no-repeat;
-  background-position: center;
   background-size: contain;
-  opacity: 0.7; /* 初始透明度 */
-  transition: opacity 0.1s ease, top 0.1s ease;
-}
-
-.nav .menu-item .nav-item:hover {
-  padding-top: 0;
-  padding-bottom: 10px;
-  opacity: 1; /* 悬停时完全显示图标 */
-}
-
-.nav .menu-item .nav-item:hover::after {
-  top: 25px;
-  opacity: 1;
-  transition: top 0.1s ease; /* 添加 top 的渐变效果 */
-}
-
-.header {
-  width: 30px;
-}
-
-a {
-  color: 0;
+  opacity: 0.7;
+  transition: opacity 1s ease, top 1s ease;
 }
 
 .main {
@@ -10635,12 +10616,6 @@ a {
   font-family: "Noto Sans TC", sans-serif;
 }
 
-.footer-img {
-  background-position: center center;
-  background-size: 50%;
-}
-
-.feedback-main-top, .feedback-main-bottom {
-  margin: auto;
-  width: 1200px;
+.container .footer-container {
+  width: 1080px;
 }/*# sourceMappingURL=all.css.map */
