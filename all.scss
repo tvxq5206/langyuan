@@ -3,14 +3,7 @@
 @import "faq";
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bricolage+Grotesque&family=Castoro:ital@1&family=Noto+Sans+TC&display=swap');
 @import "components/_navbarHover.scss";
-
-.header {
-    width: 30px;
-}
-
-a {
-    color: 000;
-}
+@import "components/_footerBgcImage.scss";
 
 .main {
     font-size: 16px;
@@ -22,12 +15,6 @@ a {
     font-family: 'Noto Sans TC', sans-serif;
 }
 
-.footer-img {
-    background-position: center center;
-    background-size: 50%;
-}
-
-.feedback-main-top, .feedback-main-bottom {
-    margin: auto; 
-    width: 1200px; 
+.container .footer-container {
+  width: 1080px;
 }
