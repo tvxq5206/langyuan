@@ -389,7 +389,6 @@ $utilities: map-merge(( // scss-docs-start utils-vertical-align
         class: pe,
         values: none auto,
       ),
-<<<<<<< HEAD
       // scss-docs-end utils-interaction
       // scss-docs-start utils-border-radius
       "rounded": (property: border-radius,
@@ -425,6 +424,7 @@ $utilities: map-merge(( // scss-docs-start utils-vertical-align
       "border-radius": (property: border-radius,
         class: bd-r,
         values: (navbar: 0 0 0 20px,
+          aboutMe: 20px 20px 20px 20px,
           20:20px,
         )),
       "padding-navbar-menu": (property: padding,
@@ -439,163 +439,32 @@ $utilities: map-merge(( // scss-docs-start utils-vertical-align
       "navbar-reset":(property: padding,
         class: pad-res,
         values: (x0: 0px 0px,
+        )),
+      "footer-margin":(property: margin,
+        class: ft-mg,
+        values: (r40: 0 40px 0 0,
+          l40: 0 0 0 40px,
+          x40: 40px 0 40px 0,
+          t100: 100px 0 0 0,
+          b24: 0 0 24px 0,
+        )),
+      "footer-padding":(property: padding,
+        class: ft-pd,
+        values: (x4: 4px 0,
+        )),
+      "img-size-height":(property: max-height,
+        class: maxHt,
+        values: (h60: 60px,
+        )),
+      "img-size-width":(property: max-width,
+        class: maxWid,
+        values: (w60: 60px,
+        )),
+      "txt-margin":(property: margin,
+        class: txt-m,
+        values: (m12: 0px 12px,
+          mr12: 0px 12px 0px 12px,
+          ml12: 0px 12px 0px 12px,
         ))),
     $utilities
 );
-=======
-      values: map-merge(
-        $utilities-bg-colors,
-        (
-          "transparent": transparent
-        )
-      )
-    ),
-    "bg-opacity": (
-      css-var: true,
-      class: bg-opacity,
-      values: (
-        10: .1,
-        25: .25,
-        50: .5,
-        75: .75,
-        100: 1
-      )
-    ),
-    // scss-docs-end utils-bg-color
-    "gradient": (
-      property: background-image,
-      class: bg,
-      values: (gradient: var(--#{$variable-prefix}gradient))
-    ),
-    // scss-docs-start utils-interaction
-    "user-select": (
-      property: user-select,
-      values: all auto none
-    ),
-    "pointer-events": (
-      property: pointer-events,
-      class: pe,
-      values: none auto,
-    ),
-    // scss-docs-end utils-interaction
-    // scss-docs-start utils-border-radius
-    "rounded": (
-      property: border-radius,
-      class: rounded,
-      values: (
-        null: $border-radius,
-        0: 0,
-        1: $border-radius-sm,
-        2: $border-radius,
-        3: $border-radius-lg,
-        circle: 50%,
-        pill: $border-radius-pill
-      )
-    ),
-    "rounded-top": (
-      property: border-top-left-radius border-top-right-radius,
-      class: rounded-top,
-      values: (null: $border-radius)
-    ),
-    "rounded-end": (
-      property: border-top-right-radius border-bottom-right-radius,
-      class: rounded-end,
-      values: (null: $border-radius)
-    ),
-    "rounded-bottom": (
-      property: border-bottom-right-radius border-bottom-left-radius,
-      class: rounded-bottom,
-      values: (null: $border-radius)
-    ),
-    "rounded-start": (
-      property: border-bottom-left-radius border-top-left-radius,
-      class: rounded-start,
-      values: (null: $border-radius)
-    ),
-    // scss-docs-end utils-border-radius
-    // scss-docs-start utils-visibility
-    "visibility": (
-      property: visibility,
-      class: null,
-      values: (
-        visible: visible,
-        invisible: hidden,
-      )
-    ),
-    // scss-docs-end utils-visibility
-    //浪圓 navbar 專用區塊
-    "border-radius": (
-      property: border-radius,
-      class: bd-r,
-      values: (
-        navbar: 0 0 0 20px,
-        aboutMe: 20px 20px 20px 20px,
-      )
-    ),
-    "padding-navbar-menu": (
-      property: padding,
-      class: pd,
-      values: (
-        navbar-a: 40px 20px,
-        navbar-py: 0px 60px,
-      )
-    ),
-    "margin-right-navbar-logo":(
-      property: margin-left,
-      class: mar-lef,
-      values: (
-        60: 60px,
-      )
-    ),
-    "navbar-reset":(
-      property: padding,
-      class: pad-res,
-      values: (
-        x0: 0px 0px,
-      )
-    ),
-    "footer-margin":(
-      property: margin,
-      class: ft-mg,
-      values: (
-        r40: 0 40px 0 0,
-        l40: 0 0 0 40px,
-        x40: 40px 0 40px 0,
-        t100: 100px 0 0 0,
-        b24: 0 0 24px 0,
-        )
-    ),
-    "footer-padding":(
-      property: padding,
-      class: ft-pd,
-      values: (
-        x4: 4px 0,
-        )
-    ),
-    "img-size-height":(
-      property: max-height,
-      class: maxHt,
-      values: (
-        h60: 60px,
-      )
-    ),
-    "img-size-width":(
-      property: max-width,
-      class: maxWid,
-      values: (
-        w60: 60px,
-      )
-    ),
-    "txt-margin":(
-      property: margin,
-      class: txt-m,
-      values: (
-        m12: 0px 12px,
-        mr12: 0px 12px 0px 12px,
-        ml12: 0px 12px 0px 12px,
-      )
-    )
-  ),
-  $utilities
-);
->>>>>>> 318ee610312f85a8ebe529ca32a13eb146b6ccf3
