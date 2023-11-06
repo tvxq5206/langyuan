@@ -8029,6 +8029,10 @@ textarea.form-control-lg {
   border-radius: 0 0 0 20px !important;
 }
 
+.bd-r-20 {
+  border-radius: 20px !important;
+}
+
 .pd-navbar-a {
   padding: 40px 20px !important;
 }
