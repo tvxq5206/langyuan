@@ -1630,13 +1630,12 @@
   border-radius: 0 0 0 20px !important;
 }
 
-<<<<<<< HEAD
-.bd-r-20 {
-  border-radius: 20px !important;
-=======
 .bd-r-aboutMe {
   border-radius: 20px 20px 20px 20px !important;
->>>>>>> 318ee610312f85a8ebe529ca32a13eb146b6ccf3
+}
+
+.bd-r-20 {
+  border-radius: 20px !important;
 }
 
 .pd-navbar-a {
