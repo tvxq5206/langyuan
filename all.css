@@ -11582,4 +11582,9 @@ footer .text-p .xxxx {
 
 .container .footer-container {
   width: 1080px;
+}
+
+.object-fit-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=all.css.map */
