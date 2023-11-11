@@ -1,0 +1,39 @@
+.whichStatus{
+    text-align: center;
+}
+.whichStatus-main{
+    padding: 150px 0;
+    
+}
+.whichStatus-mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 75px 0px;
+}
+.whichStatus-mid a{
+    text-decoration: none;
+    color: #000;
+    margin: 0 75px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.whichStatus-mid a:hover{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 75px;
+    background-color: #E4A52A;
+    border-radius: 10px;
+}
+.non-membersBlock, .memberBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+}
+.whichStatus-mid p{
+    font-weight: 600;
+    letter-spacing: 10px;
+}
