@@ -55,25 +55,25 @@
             <div class="col-3">
                 <div class="bg-white rounded-3" style="height: 100%;">
                     <div class="list-grou list-group-flush rounded-3">
-                        <a data-bs-toggle="collapse" href="#member" role="button" aria-expanded="false"
+                        <a data-bs-toggle="collapse" href="#member" role="button" aria-expanded="true"
                             aria-controls="collapseExample" class="list-group-item list-group-item-action active"
                             aria-current="true">
                             <i class="bi bi-person-vcard me-2"></i>會員資料<i
                                 class="bi bi-caret-down-fill position-absolute end-0 me-2"></i>
                         </a>
-                        <div class="collapse" id="member">
+                        <div class="collapse show" id="member">
                             <div class="list-group list-group-flush">
                                 <a href="#" class="list-group-item list-group-item-action">編輯個人資料</a>
                                 <a href="#" class="list-group-item list-group-item-action">變更密碼</a>
                             </div>
                         </div>
-                        <a data-bs-toggle="collapse" href="#survey" role="button" aria-expanded="false"
+                        <a data-bs-toggle="collapse" href="#survey" role="button" aria-expanded="true"
                             aria-controls="collapseExample"
                             class="list-group-item list-group-item-primary link-secondary1">
                             <i class="bi bi-card-checklist me-2"></i>問卷資訊<i
                                 class="bi bi-caret-down-fill position-absolute end-0 me-2"></i>
                         </a>
-                        <div class="collapse" id="survey">
+                        <div class="collapse show" id="survey">
                             <div class="list-group list-group-flush">
                                 <a href="#" class="list-group-item list-group-item-action">適性問卷測驗結果</a>
                                 <a href="#" class="list-group-item list-group-item-action">提供意見回饋</a>
@@ -91,36 +91,69 @@
                             <label for="staticEmail" class="col-sm-2 col-form-label">帳號</label>
                             <div class="col-sm-10">
                                 <input type="text" readonly class="form-control-plaintext" id="staticEmail"
-                                    value="email@example.com">
+                                    value="langyuan@example.com" readonly>
                             </div>
                         </div>
                         <div class="mb-3 row">
-                            <label for="staticEmail" class="col-sm-2 col-form-label">出生年月</label>
+                            <label for="staticBirth" class="col-sm-2 col-form-label">出生年月</label>
                             <div class="col-sm-10">
-                                <input type="text" readonly class="form-control-plaintext" id="staticEmail"
-                                    value="email@example.com">
+                                <input class="form-control" type="text" id="staticBirth" value="1994年10月" readonly>
                             </div>
                         </div>
                         <div class="mb-3 row">
-                            <label for="staticEmail" class="col-sm-2 col-form-label">暱稱</label>
+                            <label for="staticNickname" class="col-sm-2 col-form-label">暱稱</label>
                             <div class="col-sm-10">
-                                <input type="text" readonly class="form-control-plaintext" id="staticEmail"
-                                    value="email@example.com">
+                                <input class="form-control" type="text" id="staticNickname" value="Joy" readonly>
                             </div>
                         </div>
                         <div class="mb-3 row">
-                            <label for="staticEmail" class="col-sm-2 col-form-label">手機號碼</label>
+                            <label for="staticPhoneNumber" class="col-sm-2 col-form-label">手機號碼</label>
                             <div class="col-sm-10">
-                                <input type="text" readonly class="form-control-plaintext" id="staticEmail"
-                                    value="email@example.com">
+                                <input class="form-control" type="text" id="staticPhoneNumber" value="0912-345678"
+                                    readonly>
                             </div>
                         </div>
+                        <div class="mb-3 row">
+                            <fieldset class="row mb-3" disabled>
+                                <legend class="col-form-label col-sm-2 mt-1">性別</legend>
+                                <div class="col-sm-10">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                            value="option1">
+                                        <label class="form-check-label me-3" for="gridRadios1">
+                                            男性
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                            value="option2" checked>
+                                        <label class="form-check-label" for="gridRadios2">
+                                            女性
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <div class="input-group">
+                                            <div class="input-group-text">
+                                                <input class="form-check-input m-auto" type="radio" name="gridRadios"
+                                                    value="" aria-label="Radio button for following text input">
+                                                <label class="form-check-label" for="gridRadios2">
+                                                    其他
+                                                </label>
+                                            </div>
+                                            <input type="text" name="gridRadios" class="form-control"
+                                                aria-label="Text input with radio button">
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
                     </div>
                 </div>
                 <div class="row justify-content-center py-5">
                     <div class="col-3 text-center me-5">
                         <a class="link-primary text-decoration-none" href="#">
-                            <div class="card bd-r-20">
+                            <div class="card border border-primary bd-r-20">
                                 <div class="card-body">
                                     <img height="50px" src="material/icon/file-earmark-text.svg">
                                     <h5 class="card-title pt-3">問卷資訊</h5>
@@ -130,7 +163,7 @@
                     </div>
                     <div class="col-3 text-center">
                         <a class="link-primary text-decoration-none" href="#">
-                            <div class="card bd-r-20">
+                            <div class="card border border-primary bd-r-20">
                                 <div class="card-body">
                                     <img height="50px" src="material/icon/person-square.svg">
                                     <h5 class="card-title pt-3">編輯會員資訊</h5>
