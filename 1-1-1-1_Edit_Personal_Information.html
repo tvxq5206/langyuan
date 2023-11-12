@@ -64,9 +64,9 @@
                         <div class="collapse show" id="member">
                             <div class="list-group list-group-flush">
                                 <a href="1-1-1_Member-Center-Interface.html"
-                                    class="list-group-item list-group-item-action active">查看個人資料</a>
+                                    class="list-group-item list-group-item-action ">查看個人資料</a>
                                 <a href="1-1-1-1_Edit_Personal_Information.html"
-                                    class="list-group-item list-group-item-action">編輯個人資料</a>
+                                    class="list-group-item list-group-item-action active">編輯個人資料</a>
                                 <a href="1-1-1-1-1_Change_Password.html"
                                     class="list-group-item list-group-item-action">變更密碼</a>
                             </div>
@@ -89,69 +89,76 @@
             </div>
             <div class="col-8">
                 <div class="card rounded bd-r-20">
-                    <h4 class="card-header bg-primary text-white">個人資料</h4>
+                    <h4 class="card-header bg-primary text-white">編輯個人資料</h4>
                     <div class="card-body">
-                        <div class="mb-3 row">
-                            <label for="staticEmail" class="col-sm-2 col-form-label">帳號</label>
-                            <div class="col-sm-10">
-                                <input type="text" readonly class="form-control-plaintext" id="staticEmail"
-                                    value="langyuan@example.com" readonly>
-                            </div>
-                        </div>
-                        <div class="mb-3 row">
-                            <label for="staticBirth" class="col-sm-2 col-form-label">出生日期</label>
-                            <div class="col-sm-10">
-                                <input class="form-control" type="date" id="staticBirth" value="1994-10-22" readonly>
-                            </div>
-                        </div>
-                        <div class="mb-3 row">
-                            <label for="staticNickname" class="col-sm-2 col-form-label">暱稱</label>
-                            <div class="col-sm-10">
-                                <input class="form-control" type="text" id="staticNickname" value="Joy" readonly>
-                            </div>
-                        </div>
-                        <div class="mb-3 row">
-                            <label for="staticPhoneNumber" class="col-sm-2 col-form-label">手機號碼</label>
-                            <div class="col-sm-10">
-                                <input class="form-control" type="tel" id="staticPhoneNumber"
-                                    pattern="[0-9]{4}-[0-9]{6}" value="0912-345678" readonly>
-                            </div>
-                        </div>
-                        <div class="mb-3 row">
-                            <fieldset class="row mb-3" disabled>
-                                <legend class="col-form-label col-sm-2 mt-1">性別</legend>
+                        <form>
+                            <div class="mb-3 row">
+                                <label for="validationEmail" class="col-sm-2 col-form-label">帳號</label>
                                 <div class="col-sm-10">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
-                                            value="option1">
-                                        <label class="form-check-label me-3" for="gridRadios1">
-                                            男性
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                            value="option2" checked>
-                                        <label class="form-check-label" for="gridRadios2">
-                                            女性
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <div class="input-group">
-                                            <div class="input-group-text">
-                                                <input class="form-check-input m-auto" type="radio" name="gridRadios"
-                                                    value="" aria-label="Radio button for following text input">
-                                                <label class="form-check-label" for="gridRadios2">
-                                                    其他
-                                                </label>
+                                    <input type="text" readonly class="form-control-plaintext" id="validationEmail"
+                                        value="langyuan@example.com">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="validationBirth" class="col-sm-2 col-form-label">出生日期</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="date" id="validationBirth" value="1994-10-22"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="validationNickname" class="col-sm-2 col-form-label">暱稱</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="text" id="validationNickname" value="Joy"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="validationPhoneNumber" class="col-sm-2 col-form-label">手機號碼</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="tel" id="staticPhoneNumber"
+                                        pattern="[0-9]{4}-[0-9]{6}" value="0912-345678" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <fieldset class="row mb-3">
+                                    <legend class="col-form-label col-sm-2 mt-1">性別</legend>
+                                    <div class="col-sm-10">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gridRadios"
+                                                id="gridRadios1" value="option1">
+                                            <label class="form-check-label me-3" for="gridRadios1">
+                                                男性
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gridRadios"
+                                                id="gridRadios2" value="option2" checked>
+                                            <label class="form-check-label" for="gridRadios2">
+                                                女性
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <div class="input-group">
+                                                <div class="input-group-text">
+                                                    <input class="form-check-input m-auto" type="radio"
+                                                        name="gridRadios" value=""
+                                                        aria-label="Radio button for following text input">
+                                                    <label class="form-check-label" for="gridRadios2">
+                                                        其他
+                                                    </label>
+                                                </div>
+                                                <input type="text" name="gridRadios" class="form-control"
+                                                    aria-label="Text input with radio button">
                                             </div>
-                                            <input type="text" name="gridRadios" class="form-control"
-                                                aria-label="Text input with radio button">
                                         </div>
                                     </div>
+                                </fieldset>
+                                <div class="d-grid gap-2 col-2 mx-auto">
+                                    <button class="btn btn-primary bd-r-20 text-white" type="submit">儲存</button>
                                 </div>
-                            </fieldset>
-                        </div>
-
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <div class="row justify-content-center py-5">
