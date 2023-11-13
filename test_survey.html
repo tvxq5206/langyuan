@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="all.css">
+</head>
+
+<body class="bg-secondary3">
+    <nav class="navbar navbar-expand-lg sticky-top justify-content-between pad-res-x0">
+        <!-- <div class="container"> -->
+        <a class="navbar-brand mar-lef-60" href="#">
+            <!-- style="margin-left: 60px"; -->
+            <img class="xxx" src="material/logo/logo 3.svg" alt="langyuan-logo">
+        </a>
+        <div class="bg-white bd-r-navbar">
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 pd-navbar-py" style="padding: 0px 40px;">
+                    <li class="nav-item">
+                        <a class="nav-link pd-navbar-a text-gray" href="#">
+                            首頁
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pd-navbar-a text-gray" href="#">
+                            關於我們
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pd-navbar-a text-gray" href="#">
+                            浪浪認養
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pd-navbar-a text-gray" href="#">
+                            浪浪小學堂
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pd-navbar-a text-gray" href="index-feedback.html">
+                            常見問題
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-gray" href="#" style="padding: 40px 20px;">
+                            會員專區
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- </div> -->
+    </nav>
+    <div class="container">
+        <div class="row justify-content-center border-primary">
+            <div class="col-8 bg-secondary4 m-5 ps-5 pt-5">
+                <h1><img class="img-fluid me-3 mb-2" src="material/logo/logo 3.svg"
+                        style="width: 10%; height: auto;">領養適性問卷
+                </h1>
+
+                <hr class="bg-secondary2" width="95%" size="4">
+                <form id="quizForm">
+                    <div class="mt-4 Q1">
+                        <div><label for="inlineRadio1" class="form-label">1.您是否有養寵物的經驗？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="0">
+                            <label class="form-check-label" for="inlineRadio1">沒有</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="5">
+                            <label class="form-check-label" for="inlineRadio2">有一些經驗</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="10">
+                            <label class="form-check-label" for="inlineRadio2">有豐富的經驗</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 Q2">
+                        <div><label for="inlineRadio1" class="form-label">2.你的家庭成員是否有對動物過敏的情況？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1"
+                                value="0">
+                            <label class="form-check-label" for="inlineRadio1">有</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2"
+                                value="10">
+                            <label class="form-check-label" for="inlineRadio2">沒有</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 Q3">
+                        <div><label for="inlineRadio1" class="form-label">3.你是否有其他寵物？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio1"
+                                value="0">
+                            <label class="form-check-label" for="inlineRadio1">沒有</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio2"
+                                value="5">
+                            <label class="form-check-label" for="inlineRadio2">有一隻</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio2"
+                                value="10">
+                            <label class="form-check-label" for="inlineRadio2">有兩隻或以上</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 Q3-1">
+                        <div><label for="inlineRadio1" class="form-label">3-1.如果有，牠們的種類是什麼？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio1"
+                                value="0">
+                            <label class="form-check-label" for="inlineRadio1">較大型的動物（例如大型犬）</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio2"
+                                value="5">
+                            <label class="form-check-label" for="inlineRadio2">中型動物（例如中型犬、貓）</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio2"
+                                value="10">
+                            <label class="form-check-label" for="inlineRadio2">小型動物（例如小型犬、貓）</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 Q3-2">
+                        <div><label for="inlineRadio1" class="form-label">3-2.若是家中有其他寵物，牠們是否適合新成員加入？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio1"
+                                value="0">
+                            <label class="form-check-label" for="inlineRadio1">不確定或不適合</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio2"
+                                value="10">
+                            <label class="form-check-label" for="inlineRadio2">適合</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 Q4">
+                        <div><label for="inlineRadio1" class="form-label">4.你的家庭是否有小孩？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio1"
+                                value="0">
+                            <label class="form-check-label" for="inlineRadio1">是</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio2"
+                                value="5">
+                            <label class="form-check-label" for="inlineRadio2">否</label>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <div><label for="inlineRadio1" class="form-label">1.您的家庭成員是否有對動物過敏的情況？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions7" id="inlineRadio1"
+                                value="2">
+                            <label class="form-check-label" for="inlineRadio1">是</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions7" id="inlineRadio2"
+                                value="1">
+                            <label class="form-check-label" for="inlineRadio2">否</label>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <div><label for="inlineRadio1" class="form-label">1.您的家庭成員是否有對動物過敏的情況？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions8" id="inlineRadio1"
+                                value="2">
+                            <label class="form-check-label" for="inlineRadio1">是</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions8" id="inlineRadio2"
+                                value="1">
+                            <label class="form-check-label" for="inlineRadio2">否</label>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <div><label for="inlineRadio1" class="form-label">1.您的家庭成員是否有對動物過敏的情況？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions9" id="inlineRadio1"
+                                value="2">
+                            <label class="form-check-label" for="inlineRadio1">是</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions9" id="inlineRadio2"
+                                value="1">
+                            <label class="form-check-label" for="inlineRadio2">否</label>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <div><label for="inlineRadio1" class="form-label">1.您的家庭成員是否有對動物過敏的情況？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions10" id="inlineRadio1"
+                                value="2">
+                            <label class="form-check-label" for="inlineRadio1">是</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions10" id="inlineRadio2"
+                                value="1">
+                            <label class="form-check-label" for="inlineRadio2">否</label>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <div><label for="inlineRadio1" class="form-label">1.您的家庭成員是否有對動物過敏的情況？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions11" id="inlineRadio1"
+                                value="2">
+                            <label class="form-check-label" for="inlineRadio1">是</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions11" id="inlineRadio2"
+                                value="1">
+                            <label class="form-check-label" for="inlineRadio2">否</label>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 col-2 mx-auto my-4">
+                        <button class="btn btn-primary" type="button" onclick="calculateScore()">送出</button>
+                    </div>
+
+                </form>
+
+                <div id="result"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer">
+            <!-- footer-container ft-mg-t100 -->
+            <div class="ccc">
+                <!-- text-center -->
+                <div class="text-center">
+                    <div class="footer-snslink">
+                        <a class="ft-mg-r40" href="#">
+                            <img class="maxWid-w60 maxHt-h60" src="material/icon/facebook.svg" alt="facebook">
+                            <p>Facebook</p>
+                        </a>
+                        <a class="ft-mg-l40" href="#">
+                            <img class="maxWid-w60 maxHt-h60" src="material/icon/ig.svg" alt="ig">
+                            <p class="xxxx">Instagram</p>
+                        </a>
+                    </div>
+                    <ul class="">
+                        <!-- d-flex justify-content-center text-white ft-mg-x40 -->
+                        <li class="">
+                            <!-- text-center -->
+                            <!-- text-decoration-none text-white -->
+                            <a class="" href="#">關於我們</a>
+                        </li>
+                        <li class="">
+                            <a class="" href="#">聯絡我們</a>
+                        </li>
+                        <li class="">
+                            <a class="" href="#">常見問題</a>
+                        </li>
+                        <li class="">
+                            <a class="" href="#">網站條款</a>
+                        </li>
+                    </ul>
+                    <div class="text-p">
+                        <!-- text-p ft-mg-b24 -->
+                        <p class="">
+                            Copyright @2023 Search for LangYuan All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <div class="footer-text text-center">
+        <p class="">
+            本專題僅為學習用途·不做任何商業使用·圖片來源請見 github repo
+        </p>
+    </div>
+    </div>
+    <script>
+        function calculateScore() {
+            var form = document.getElementById('quizForm');
+            var elements = form.elements;
+            var score = 0;
+
+            for (var i = 0; i < elements.length; i++) {
+                if (elements[i].type === 'radio' && elements[i].checked) {
+                    score += parseInt(elements[i].value, 10);
+                }
+            }
+
+            document.getElementById('result').innerHTML = `總分為${score}`
+        }
+    </script>
+    <!-- 導入JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
