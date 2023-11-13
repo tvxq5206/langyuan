@@ -24,7 +24,8 @@
   width: 1080px;
 }
 
-
-.object-fit-cover {
-  object-fit: cover;
+.banner {
+  height: 500px;
+  background-position: center center;
+  background-size: cover;
 }

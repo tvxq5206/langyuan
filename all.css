@@ -10866,7 +10866,8 @@ footer .text-p .xxxx {
   width: 1080px;
 }
 
-.object-fit-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
+.banner {
+  height: 500px;
+  background-position: center center;
+  background-size: cover;
 }/*# sourceMappingURL=all.css.map */
