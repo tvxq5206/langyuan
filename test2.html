@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+<head>
+
+
+
+    <meta charset="UTF-8">
+
+    <title>表单标签</title>
+
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+    <form onsubmit="return validatePassword();">
+        <label for="password1">密码：</label>
+        <input type="password" id="password1"><br>
+
+        <label for="password2">确认密码：</label>
+        <input type="password" id="password2"><br>
+
+        <input type="submit" value="提交">
+    </form>
+</body>
+
+<script type="text/javascript">
+    function validatePassword() {
+        var password1 = document.getElementById("password1").value;
+        var password2 = document.getElementById("password2").value;
+
+        if (password1 != password2) {
+            alert("两次输入的密码不一致，请重新输入！");
+            return false;
+        }
+
+        return true;
+    }
+</script>
+
+
+
+</html>

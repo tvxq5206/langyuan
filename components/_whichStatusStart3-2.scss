@@ -1,0 +1,68 @@
+h1,h2,p{
+    margin: 0;
+}
+.whichStatusStark{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px 200px;
+    background-color: #EDDDD0;
+    border-radius: 10px;
+}
+.whichStatusStark-mid{
+    padding: 100px 125px 100px 125px
+}
+.textDescription{
+    padding: 30px 0;
+}
+.whichStatusStark-title-text p{
+    margin: 5px 0;
+}
+.textDescription h2{
+    padding-bottom: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    line-height: 120%;
+    letter-spacing: 2px;
+}
+.textDescription-text p{
+    font-size: 16px;
+    color: #000;
+    line-height: 150%;
+    letter-spacing: 2px;
+}
+.whichStatusStark-mid .whichStatusStark-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0E8E0;
+    font-size: 16px;
+    color: #000;
+    line-height: 150%;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 15px 50px;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+.whichStatusStark-btn:hover{
+    background-color: #E4A52A;
+    color: #fff;
+}
+.whichStatusStark-btn-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0px;
+}
+.border-y{
+    position: relative;
+}
+.border-y img{
+    position: absolute;
+}
+.remark{
+    margin-top: 50px;
+    text-align: center;
+}

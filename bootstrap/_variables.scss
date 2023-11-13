@@ -371,6 +371,8 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
   ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -1494,7 +1496,7 @@ $list-group-item-color-scale: 40% !default;
 
 $list-group-hover-bg: $gray-100 !default;
 $list-group-active-color: $component-active-color !default;
-$list-group-active-bg: $component-active-bg !default;
+$list-group-active-bg: #E4A52A !default;
 $list-group-active-border-color: $list-group-active-bg !default;
 
 $list-group-disabled-color: $gray-600 !default;
