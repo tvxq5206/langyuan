@@ -11349,11 +11349,11 @@ textarea.form-control-lg {
   width: 800px;
 }
 
-.nav-item {
+.nav-item-catpaw {
   display: inline-block;
 }
 
-.nav-item {
+.nav-item-catpaw {
   display: block;
   text-decoration: none;
   position: relative;
@@ -11362,7 +11362,7 @@ textarea.form-control-lg {
 /*.nav-item:hover, .nav-item.selected{
     color:red;
   }*/
-.nav-item.selected:before, .nav-item:hover:before {
+.nav-item-catpaw.selected:before, .nav-item-catpaw:hover:before {
   content: "";
   position: absolute;
   top: 10%;
