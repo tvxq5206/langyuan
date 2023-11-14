@@ -6,17 +6,17 @@
 .page-link {
   position: relative;
   display: block;
-  color: $pagination-color;
+  color: #202020;//$pagination-color;
   text-decoration: if($link-decoration == none, null, none);
-  background-color: $pagination-bg;
+  background-color: #E4A52A; //$pagination-bg;
   border: $pagination-border-width solid $pagination-border-color;
   @include transition($pagination-transition);
 
   &:hover {
     z-index: 2;
-    color: $pagination-hover-color;
+    color: #FFFFFF;//$pagination-hover-color;
     text-decoration: if($link-hover-decoration == underline, none, null);
-    background-color: $pagination-hover-bg;
+    background-color: #A98467;//$pagination-hover-bg;
     border-color: $pagination-hover-border-color;
   }
 
