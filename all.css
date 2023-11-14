@@ -11695,7 +11695,7 @@ h1, .h1, h2, .h2, p {
 .cute-cat {
   transform: rotate(90deg);
   position: absolute;
-  max-width: 10%;
+  max-width: 13%;
   top: 65%;
   left: 20%;
 }
