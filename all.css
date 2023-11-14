@@ -11677,11 +11677,26 @@ h1, .h1, h2, .h2, p {
   position: relative;
 }
 
+.font-size-about-h1 {
+  font-size: 48px;
+}
+
+.font-size-about-p {
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 3px;
+}
+
+.font-size-about-font {
+  font-family: "Castoro", serif;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
 .cute-cat {
   transform: rotate(90deg);
   position: absolute;
-  max-width: 20%;
-  top: 50%;
+  max-width: 10%;
+  top: 65%;
   left: 20%;
 }
 
@@ -11690,6 +11705,6 @@ h1, .h1, h2, .h2, p {
   position: absolute;
   max-width: 25%;
   height: 25%;
-  left: 2%;
+  left: 0%;
   top: 75%;
 }/*# sourceMappingURL=all.css.map */
