@@ -11714,4 +11714,16 @@ h1, .h1, h2, .h2, p {
   font-size: 18px;
   line-height: 200%;
   letter-spacing: 2px;
+}
+
+.adoption-font-step {
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 4px;
+}
+
+.adoption-font-content {
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: 3px;
 }/*# sourceMappingURL=all.css.map */
