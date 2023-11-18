@@ -11671,6 +11671,25 @@ h1, .h1, h2, .h2, p {
   background-size: cover;
 }
 
+.object-fit-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-top-left {
+  -o-object-position: top left;
+     object-position: top left;
+}
+
+.object-right {
+  -o-object-position: right;
+     object-position: right;
+}
+
+.height-stray-card {
+  height: 300px;
+}
+
 .custom-container {
   background-color: #F0E8E0;
   height: auto;
