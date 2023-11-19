@@ -1,100 +1,400 @@
 <!DOCTYPE html>
-<html lang="zh_TW">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="all.css">
-    <title>領養適性問卷</title>
 </head>
-<body>
-    <div class="main bg-secondary3">
-        <nav class="navbar navbar-expand-lg sticky-top justify-content-between pad-res-x0">
-            <a class="navbar-brand mar-lef-60" href="#">
-                <img class="xxx" src="material/logo/logo 3.svg" alt="langyuan-logo">
-            </a>
-            <div class="bg-white bd-r-navbar">
-                <div class="collapse navbar-collapse "  id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0 pd-navbar-py" style="padding:0px 40px;">
-                        <li class="nav-item">
-                            <a class="nav-link pd-navbar-a text-gray" href="#">
-                                首頁
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link pd-navbar-a text-gray" href="#">
-                                關於我們
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link pd-navbar-a text-gray" href="#">
-                                浪浪認養
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link pd-navbar-a text-gray" href="#">
-                                浪浪小學堂
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link pd-navbar-a text-gray" href="index-feedback.html">
-                                常見問題
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link pd-navbar-a text-gray" href="#">
-                                會員專區
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+
+<body class="main bg-secondary3">
+    <nav class="navbar navbar-expand-lg sticky-top justify-content-between pad-res-x0">
+        <!-- <div class="container"> -->
+        <a class="navbar-brand mar-lef-60" href="#">
+            <!-- style="margin-left: 60px"; -->
+            <img class="xxx" src="material/logo/logo 3.svg" alt="langyuan-logo">
+        </a>
+        <div class="bg-white bd-r-navbar">
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 pd-navbar-py" style="padding: 0px 40px;">
+                    <li class="nav-item-catpaw">
+                        <a class="nav-link pd-navbar-a text-gray" href="#">
+                            首頁
+                        </a>
+                    </li>
+                    <li class="nav-item-catpaw">
+                        <a class="nav-link pd-navbar-a text-gray" href="#">
+                            關於我們
+                        </a>
+                    </li>
+                    <li class="nav-item-catpaw">
+                        <a class="nav-link pd-navbar-a text-gray" href="#">
+                            浪浪認養
+                        </a>
+                    </li>
+                    <li class="nav-item-catpaw">
+                        <a class="nav-link pd-navbar-a text-gray" href="#">
+                            浪浪小學堂
+                        </a>
+                    </li>
+                    <li class="nav-item-catpaw">
+                        <a class="nav-link pd-navbar-a text-gray" href="index-feedback.html">
+                            常見問題
+                        </a>
+                    </li>
+                    <li class="nav-item-catpaw">
+                        <a class="nav-link text-gray" href="#" style="padding: 40px 20px;">
+                            會員專區
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        
-        <style>
-            /* *, *::before, *::after{
-                outline:1px solid red
-            } */
-            
-            
-        </style>
-        <div class="adoptionSurvey">
-            <div class="adoptionSurvey-mid">
-                <div class="adoptionSurvey-title-text">
-                    <h1>領養適性問卷</h1>
-                    <p class="">浪圓</p>
-                </div>
-                <div class="questionBlock">
-                    <ul class="questionContent">
-                        <li class="questionContent"></li>
-                        <li class="questionContent"></li>
-                        <li class="questionContent"></li>
-                        <li class="questionContent"></li>
-                        <li class="questionContent"></li>
-                        <li class="questionContent"></li>
-                        <li class="questionContent"></li>
-                        <li class="questionContent"></li>
-                        <li class="questionContent"></li>
-                        <li class="questionContent"></li>
-                    </ul>
-                </div>
-            </div>    
         </div>
-        <footer>
-            <div class="footer">
-                <div class="ccc">
-                    <div class="text-center">
-                        <div class="footer-snslink">
-                            <a class="ft-mg-r40" href="#">
-                                <img class="maxWid-w60 maxHt-h60" src="material/icon/facebook.svg" alt="facebook">
-                                <p>Facebook</p>
-                            </a>
-                            <a class="ft-mg-l40" href="#">
-                                <img class="maxWid-w60 maxHt-h60" src="material/icon/ig.svg" alt="ig">
-                                <p class="xxxx">Instagram</p>
-                            </a>
+        <!-- </div> -->
+    </nav>
+    <div class="container">
+        <div class="row justify-content-center border-primary">
+            <div class="col-8 bg-secondary4 m-5 ps-5 pt-5">
+                <h1><img class="img-fluid me-3 mb-2" src="material/logo/logo 3.svg"
+                        style="width: 10%; height: auto;">領養適性問卷
+                </h1>
+                <hr class="bg-secondary2" width="95%" size="4">
+                <form id="quizForm">
+                    <div class="mt-4 TestQ1">
+                        <div><label for="TestQ1" class="form-label">1.您是否有養寵物的經驗？</label>
                         </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ1" value="0">
+                            <label class="form-check-label" for="TestQ1">沒有</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ1" value="5">
+                            <label class="form-check-label" for="TestQ1">有一些經驗</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ1" value="10">
+                            <label class="form-check-label" for="TestQ1">有豐富的經驗</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 TestQ2">
+                        <div><label for="TestQ2" class="form-label">2.你的家庭成員是否有對動物過敏的情況？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ2" value="0">
+                            <label class="form-check-label" for="TestQ2">有</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ2" value="10">
+                            <label class="form-check-label" for="TestQ2">沒有</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 TestQ3">
+                        <div><label for="TestQ3" class="form-label">3.你是否有其他寵物？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ3" value="0">
+                            <label class="form-check-label" for="TestQ3">沒有</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ3" value="5">
+                            <label class="form-check-label" for="TestQ3">有一隻</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ3" value="10">
+                            <label class="form-check-label" for="TestQ3">有兩隻或以上</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 TestQ3-1">
+                        <div><label for="TestQ3-1" class="form-label">3-1.如果有，牠們的種類是什麼？ <small>(若無可跳過)</small> </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ3-1" value="0">
+                            <label class="form-check-label" for="TestQ3-1">較大型的動物（例如大型犬）</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ3-1" value="5">
+                            <label class="form-check-label" for="TestQ3-1">中型動物（例如中型犬、貓）</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ3-1" value="10">
+                            <label class="form-check-label" for="TestQ3-1">小型動物（例如小型犬、貓）</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 TestQ3-2">
+                        <div><label for="TestQ3-2"
+                                class="form-label">3-2.若是家中有其他寵物，牠們是否適合新成員加入？<small>(若無可跳過)</small></label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ3-2" value="0">
+                            <label class="form-check-label" for="TestQ3-2">不確定或不適合</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ3-2" value="10">
+                            <label class="form-check-label" for="TestQ3-2">適合</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 TestQ4">
+                        <div><label for="TestQ4" class="form-label">4.你的家庭是否有小孩？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ4" value="0">
+                            <label class="form-check-label" for="TestQ4">沒有</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ4" value="5">
+                            <label class="form-check-label" for="TestQ4">有</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 TestQ4-1">
+                        <div><label for="TestQ4-1" class="form-label">4-1.如果有，他們的年齡是幾歲?<small>(若無可跳過)</small></label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ4-1" value="0">
+                            <label class="form-check-label" for="TestQ4-1">小於1歲</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ4-1" value="5">
+                            <label class="form-check-label" for="TestQ4-1">1-5歲</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ4-1" value="10">
+                            <label class="form-check-label" for="TestQ4-1">5歲以上</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 TestQ5">
+                        <div><label for="TestQ5" class="form-label">5.你的房屋是否為自己所有？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ5" value="0">
+                            <label class="form-check-label" for="TestQ5">租屋</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ5" value="5">
+                            <label class="form-check-label" for="TestQ5">自己的房屋</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 TestQ5-1">
+                        <div><label for="TestQ5-1" class="form-label">5-1.您的住所是否可以養小狗/小貓？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ5-1" value="10">
+                            <label class="form-check-label" for="TestQ5-1">是</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ5-1" value="0">
+                            <label class="form-check-label" for="TestQ5-1">否</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 TestQ5-2">
+                        <div><label for="TestQ5-2"
+                                class="form-label">5-2.如果您是租屋，您的房東是否同意？<small>(若非租屋可跳過)</small></label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ5-2" value="10">
+                            <label class="form-check-label" for="TestQ5-2">是</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ5-2" value="0">
+                            <label class="form-check-label" for="TestQ5-2">否</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 TestQ5-3">
+                        <div><label for="TestQ5-3" class="form-label">5-3.若是住在高樓層的公寓或大廈，家中門窗是否有安裝如紗窗或鐵窗等防護措施？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ5-3" value="10">
+                            <label class="form-check-label" for="TestQ5-3">是</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ5-3" value="0">
+                            <label class="form-check-label" for="TestQ5-3">否</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 TestQ6">
+                        <div><label for="TestQ6" class="form-label">6.您是否常常因個人因素而不在家呢？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ6" value="0">
+                            <label class="form-check-label" for="TestQ6">是</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ6" value="10">
+                            <label class="form-check-label" for="TestQ6">否</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 TestQ7">
+                        <div><label for="TestQ7" class="form-label">7.你是否有足夠的時間和精力來照顧和訓練一隻小狗/小貓？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ7" value="10">
+                            <label class="form-check-label" for="TestQ7">是</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ7" value="0">
+                            <label class="form-check-label" for="TestQ7">否</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 TestQ8">
+                        <div><label for="TestQ8" class="form-label">8.如果小狗/小貓的行為不符合您的預期，例如破壞家具、製造髒亂等，是否有意願繼續飼養？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ8" value="10">
+                            <label class="form-check-label" for="TestQ8">是</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ8" value="0">
+                            <label class="form-check-label" for="TestQ8">否</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 TestQ9">
+                        <div><label for="TestQ9" class="form-label">9.您是否了解小狗/小貓的常見疾病，例如腎衰竭、口炎等？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ9" value="0">
+                            <label class="form-check-label" for="TestQ9">不了解</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ9" value="5">
+                            <label class="form-check-label" for="TestQ9">部分了解</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ9" value="10">
+                            <label class="form-check-label" for="TestQ9">很了解</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 TestQ10">
+                        <div><label for="TestQ10" class="form-label">10.你是否有能力提供小狗/小貓的基本醫療保健，如疫苗接種和體檢？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ10" value="10">
+                            <label class="form-check-label" for="TestQ10">是</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ10" value="0">
+                            <label class="form-check-label" for="TestQ10">否</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 TestQ11">
+                        <div><label for="TestQ11" class="form-label">11.您是否有固定配合且信任的獸醫？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ11" value="10">
+                            <label class="form-check-label" for="TestQ11">是</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ11" value="0">
+                            <label class="form-check-label" for="TestQ11">否</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 TestQ12">
+                        <div><label for="TestQ12" class="form-label">12.你是否有計劃帶小狗/小貓出去散步或讓他們進戶外活動？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ12" value="10">
+                            <label class="form-check-label" for="TestQ12">是</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ12" value="0">
+                            <label class="form-check-label" for="TestQ12">否</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 TestQ13">
+                        <div><label for="TestQ13" class="form-label">13.你是否有計劃提供小狗/小貓良好的飲食？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ13" value="10">
+                            <label class="form-check-label" for="TestQ13">是</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ13" value="0">
+                            <label class="form-check-label" for="TestQ13">否</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 TestQ14">
+                        <div><label for="TestQ14" class="form-label">14.你是否瞭解小狗/小貓的基本需求和行為特點？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ14" value="0">
+                            <label class="form-check-label" for="TestQ14">不了解</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ14" value="5">
+                            <label class="form-check-label" for="TestQ14">部分了解</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ14" value="10">
+                            <label class="form-check-label" for="TestQ14">很了解</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 TestQ15">
+                        <div><label for="TestQ15" class="form-label">15.若是遇到重大生活上的變動，例如結婚、生小孩或搬家，是否有意願繼續飼養小狗/小貓？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ15" value="10">
+                            <label class="form-check-label" for="TestQ15">是</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ15" value="0">
+                            <label class="form-check-label" for="TestQ15">否</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 TestQ16">
+                        <div><label for="TestQ16"
+                                class="form-label">16.您是否了解，領養後小狗/小貓的生命健康及教養就是您的責任，且您已百分之百確定可以勝任飼主？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ16" value="10">
+                            <label class="form-check-label" for="TestQ16">是</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ16" value="0">
+                            <label class="form-check-label" for="TestQ16">否</label>
+                        </div>
+                    </div>
+                    <div class="mt-4 TestQ17">
+                        <div><label for="TestQ17" class="form-label">17.是否可以配合志工送養前後的定期追蹤？不論是遠端（傳送照片等）或是實體（家訪）？</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ17" value="10">
+                            <label class="form-check-label" for="TestQ17">是</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="TestQ17" value="0">
+                            <label class="form-check-label" for="TestQ17">否</label>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 col-2 mx-auto my-6">
+                        <button class="btn btn-primary" type="button" onclick="calculateScore()">送出</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer">
+            <!-- footer-container ft-mg-t100 -->
+            <div class="ccc">
+                <!-- text-center -->
+                <div class="text-center">
+                    <div class="footer-snslink">
+                        <a class="ft-mg-r40" href="#">
+                            <img class="maxWid-w60 maxHt-h60" src="material/icon/facebook.svg" alt="facebook">
+                            <p>Facebook</p>
+                        </a>
+                        <a class="ft-mg-l40" href="#">
+                            <img class="maxWid-w60 maxHt-h60" src="material/icon/ig.svg" alt="ig">
+                            <p class="xxxx">Instagram</p>
+                        </a>
+                    </div>
                     <ul class="">
+                        <!-- d-flex justify-content-center text-white ft-mg-x40 -->
                         <li class="">
+                            <!-- text-center -->
+                            <!-- text-decoration-none text-white -->
                             <a class="" href="#">關於我們</a>
                         </li>
                         <li class="">
@@ -115,14 +415,39 @@
                     </div>
                 </div>
             </div>
-        </footer>
-        <div class="footer-text text-center">
-            <p class="">
-                本專題僅為學習用途·不做任何商業使用·圖片來源請見 github repo
-            </p>
-        </div>
+    </footer>
+    <div class="footer-text text-center">
+        <p class="">
+            本專題僅為學習用途·不做任何商業使用·圖片來源請見 github repo
+        </p>
     </div>
+    </div>
+    <script>
+        function calculateScore() {
+            var form = document.getElementById('quizForm');
+            var elements = form.elements;
+            var score = 0;
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+            for (var i = 0; i < elements.length; i++) {
+                if (elements[i].type === 'radio' && elements[i].checked) {
+                    score += parseInt(elements[i].value, 10);
+                }
+            }
+
+            if (score >= 60) {
+                // 如果總分大於等於120跳至適合頁面
+                window.location.href = '3-2-2_survey_result.html';
+            } else {
+                // 如果總分大於小於120跳至不適合頁面
+                window.location.href = '3-2-2-1_survey_result_failed.html';
+            }
+        }
+
+    </script>
+    <!-- 導入JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
