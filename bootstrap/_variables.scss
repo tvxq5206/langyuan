@@ -1281,10 +1281,10 @@ $card-group-margin: $grid-gutter-width * .5 !default;
 // scss-docs-start accordion-variables
 $accordion-padding-y: 1rem !default;
 $accordion-padding-x: 1.25rem !default;
-$accordion-color: $body-color !default;
-$accordion-bg: $body-bg !default;
+$accordion-color: #A98467; //$body-color !default;
+$accordion-bg: #A98467; //$body-bg !default;
 $accordion-border-width: $border-width !default;
-$accordion-border-color: rgba($black, .125) !default;
+$accordion-border-color: #FFFFFF; //rgba($black, .125) !default;
 $accordion-border-radius: $border-radius !default;
 $accordion-inner-border-radius: subtract($accordion-border-radius, $accordion-border-width) !default;
 
@@ -1293,12 +1293,12 @@ $accordion-body-padding-x: $accordion-padding-x !default;
 
 $accordion-button-padding-y: $accordion-padding-y !default;
 $accordion-button-padding-x: $accordion-padding-x !default;
-$accordion-button-color: $accordion-color !default;
+$accordion-button-color: #EDDDD0; //$accordion-color !default;
 $accordion-button-bg: $accordion-bg !default;
 $accordion-transition: $btn-transition,
   border-radius .15s ease !default;
-$accordion-button-active-bg: tint-color($component-active-bg, 90%) !default;
-$accordion-button-active-color: shade-color($primary, 10%) !default;
+$accordion-button-active-bg: #A98467;//tint-color($component-active-bg, 90%) !default;
+$accordion-button-active-color: #EDDDD0; //shade-color($primary, 10%) !default;
 
 $accordion-button-focus-border-color: $input-focus-border-color !default;
 $accordion-button-focus-box-shadow: $btn-focus-box-shadow !default;
@@ -1307,7 +1307,7 @@ $accordion-icon-width: 1.25rem !default;
 $accordion-icon-color: $accordion-button-color !default;
 $accordion-icon-active-color: $accordion-button-active-color !default;
 $accordion-icon-transition: transform .2s ease-in-out !default;
-$accordion-icon-transform: rotate(-180deg) !default;
+$accordion-icon-transform: rotate(-90deg) !default;
 
 $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
 $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
@@ -1484,8 +1484,8 @@ $progress-bar-transition: width .6s ease !default;
 
 // scss-docs-start list-group-variables
 $list-group-color: $gray-900 !default;
-$list-group-bg: $white !default;
-$list-group-border-color: rgba($black, .125) !default;
+$list-group-bg: #A98467; //$white !default;
+$list-group-border-color: #F0E8E0; //rgba($black, .125) !default;
 $list-group-border-width: $border-width !default;
 $list-group-border-radius: $border-radius !default;
 
@@ -1494,7 +1494,7 @@ $list-group-item-padding-x: $spacer !default;
 $list-group-item-bg-scale: -80% !default;
 $list-group-item-color-scale: 40% !default;
 
-$list-group-hover-bg: $gray-100 !default;
+$list-group-hover-bg: #EDDDD0;//$gray-100 !default;
 $list-group-active-color: $component-active-color !default;
 $list-group-active-bg: #E4A52A !default;
 $list-group-active-border-color: $list-group-active-bg !default;
