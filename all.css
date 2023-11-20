@@ -11697,6 +11697,10 @@ h1, .h1, h2, .h2, p {
 .custom-container {
   background-color: #F0E8E0;
   height: auto;
+}
+
+.about-box {
+  overflow: hidden;
   position: relative;
 }
 
@@ -11718,17 +11722,16 @@ h1, .h1, h2, .h2, p {
 .cute-cat {
   transform: rotate(90deg);
   position: absolute;
-  max-width: 13%;
-  top: 65%;
+  max-width: 100px;
+  top: 0%;
   left: 20%;
 }
 
 .cute-dog {
   transform: scaleX(-1);
   position: absolute;
-  max-width: 25%;
-  height: 25%;
-  left: 0%;
+  max-width: 100px;
+  left: 0;
   top: 75%;
 }
 

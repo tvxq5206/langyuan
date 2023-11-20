@@ -53,10 +53,12 @@
 .custom-container{
   background-color:  #F0E8E0 ;
   height: auto;
-  position: relative;
-
 }
 
+.about-box{
+overflow: hidden;
+position: relative;
+}
 
 .font-size-about-h1{
   font-size: 48px;
@@ -77,17 +79,16 @@
 .cute-cat{
   transform: rotate(90deg);
   position: absolute;
-  max-width: 13%;
-  top:65%;
+  max-width: 100px;
+  top:0%;
   left:20%;
 
 }
 .cute-dog{
   transform: scaleX(-1);
   position: absolute;
-  max-width: 25%;
-  height:25%;
-  left:0%;
+  max-width: 100px;
+  left:0;
   top:75%;
 }
 
