@@ -86,10 +86,11 @@ position: relative;
 }
 .cute-dog{
   transform: scaleX(-1);
+  
   position: absolute;
   max-width: 150px;
   left:0;
-  top:50%;
+  top:75%;
 }
 
 .mail-font-color{
@@ -98,6 +99,10 @@ position: relative;
 
 .about-box1-margin{
   margin: 80px;
+}
+
+.about-font-weight{
+  font-weight: bold;
 }
 
 .font-size-knowledge-para {
