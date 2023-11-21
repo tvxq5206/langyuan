@@ -36,32 +36,52 @@
   </head>
 
   <body class="main bg-secondary3">
-    <section class="text-center">
-      <div class="container position-absolute top-50 start-50 translate-middle">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container align-items-center">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuContent"
+          aria-controls="menuContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img height="50" src="material/logo/logo 3.svg" alt="" />
+        </a>
+        <div
+          class="collapse navbar-collapse order-2 justify-content-center"
+          id="menuContent"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item-catpaw">
+              <a class="nav-link" href="#">首頁</a>
+            </li>
+            <li class="nav-item-catpaw">
+              <a class="nav-link" href="#">關於我們</a>
+            </li>
+            <li class="nav-item-catpaw">
+              <a class="nav-link" href="#">浪浪認養</a>
+            </li>
+            <li class="nav-item-catpaw">
+              <a class="nav-link" href="#">浪浪小學堂</a>
+            </li>
+            <li class="nav-item-catpaw">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item-catpaw">
+              <a class="nav-link" href="#">會員專區</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="text-center py-5">
+      <div class="container">
         <div class="row">
-          <!-- 表單切換按鈕 -->
-          <div class="text-center mt-3 mb-5">
-            <div class="custom-control custom-switch">
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                id="toggleSwitch"
-                checked
-                data-toggle="toggle"
-                data-style="ios"
-                data-onlabel="登入會員"
-                data-offlabel="註冊會員"
-                data-onstyle="primary"
-                data-offstyle="secondary2"
-              />
-              <!-- <label
-                class="custom-control-label"
-                for="toggleSwitch"
-                id="toggleLabel"
-                >還沒加入會員?按此切換註冊表單</label
-              > -->
-            </div>
-          </div>
           <!-- 登入和註冊表單 -->
           <div class="col-lg-4 col-sm-6 m-auto" id="combinedForm">
             <div class="bg-white shadow p-sm-4 bd-r-20">
@@ -212,11 +232,35 @@
                   </button>
                 </div>
               </form>
+              <!-- 表單切換按鈕 -->
+              <div class="text-center mt-5">
+                <div class="custom-control custom-switch">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="toggleSwitch"
+                    checked
+                    data-toggle="toggle"
+                    data-style="ios"
+                    data-onlabel="前往註冊"
+                    data-offlabel="前往登入"
+                    data-onstyle="secondary4"
+                    data-offstyle="secondary4"
+                  />
+                </div>
+                <label
+                  class="custom-control-label mt-2"
+                  for="toggleSwitch"
+                  id="toggleLabel"
+                  ><small>還沒加入會員?按此切換註冊表單</small>
+                </label>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <script>
       //顯示/隱藏密碼
       function showhide(inputId, eyeId) {
@@ -239,6 +283,7 @@
 
           const loginForm = document.getElementById("loginForm");
           const registerForm = document.getElementById("registerForm");
+          const toggleLabel = document.getElementById("toggleLabel");
 
           const loginFormStyle = window.getComputedStyle(loginForm);
 
@@ -246,10 +291,13 @@
             loginForm.style.display = "block"; // 顯示登入表單
             registerForm.style.display = "none"; // 隱藏註冊表單
             formTitle.innerText = "會員登入"; // 切換標題
+            toggleLabel.innerHTML =
+              "<small>還沒加入會員?按此切換註冊表單</small>";
           } else {
             loginForm.style.display = "none"; // 隱藏登入表單
             registerForm.style.display = "block"; // 顯示註冊表單
             formTitle.innerText = "會員註冊"; // 切換標題
+            toggleLabel.innerHTML = "<small>註冊完成可按此前往登入</small>";
           }
         });
     </script>
