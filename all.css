@@ -11722,7 +11722,7 @@ h1, .h1, h2, .h2, p {
 .cute-cat {
   transform: rotate(90deg);
   position: absolute;
-  max-width: 100px;
+  max-width: 150px;
   top: 0%;
   left: 20%;
 }
@@ -11730,9 +11730,9 @@ h1, .h1, h2, .h2, p {
 .cute-dog {
   transform: scaleX(-1);
   position: absolute;
-  max-width: 100px;
+  max-width: 150px;
   left: 0;
-  top: 75%;
+  top: 50%;
 }
 
 .font-size-knowledge-para {
