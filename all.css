@@ -11728,11 +11728,11 @@ h1, .h1, h2, .h2, p {
 }
 
 .cute-dog {
-  transform: scaleX(-1);
+  transform: scaleX(-1) rotate(45deg);
   position: absolute;
   max-width: 150px;
-  left: 0;
-  top: 75%;
+  left: 5%;
+  top: 70%;
 }
 
 .mail-font-color {
