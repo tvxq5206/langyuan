@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap5-toggle@5.0.4/css/bootstrap5-toggle.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="all.css" />
+    <style>
+      .input-with-icon {
+        display: flex;
+        align-items: center;
+      }
+
+      .form-control::placeholder {
+        font-size: 14px;
+      }
+
+      .toggle.ios,
+      .toggle-on.ios,
+      .toggle-off.ios {
+        border-radius: 20rem;
+      }
+
+      .toggle.ios .toggle-handle {
+        border-radius: 20rem;
+      }
+    </style>
+  </head>
+
+  <body class="main bg-secondary3">
+    <section class="text-center">
+      <div class="container position-absolute top-50 start-50 translate-middle">
+        <div class="row">
+          <!-- 表單切換按鈕 -->
+          <div class="text-center mt-3 mb-5">
+            <div class="custom-control custom-switch">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="toggleSwitch"
+                checked
+                data-toggle="toggle"
+                data-style="ios"
+                data-onlabel="登入會員"
+                data-offlabel="註冊會員"
+                data-onstyle="primary"
+                data-offstyle="secondary2"
+              />
+              <!-- <label
+                class="custom-control-label"
+                for="toggleSwitch"
+                id="toggleLabel"
+                >還沒加入會員?按此切換註冊表單</label
+              > -->
+            </div>
+          </div>
+          <!-- 登入和註冊表單 -->
+          <div class="col-lg-4 col-sm-6 m-auto" id="combinedForm">
+            <div class="bg-white shadow p-sm-4 bd-r-20">
+              <div class="text-center mb-5">
+                <!-- 這裡保留了原來的標題 -->
+                <h1 class="display-6" id="formTitle">會員登入</h1>
+              </div>
+              <form onsubmit="return validatePassword();" id="loginForm">
+                <!-- 登入表單的內容 -->
+                <div class="mb-4 row">
+                  <label for="LoginEmail" class="col-3 col-form-label"
+                    >帳號</label
+                  >
+                  <div class="col-8">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="請輸入您的電子信箱"
+                      id="LoginEmail"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="mb-4 row">
+                  <label for="LoginPass" class="col-3 col-form-label"
+                    >密碼</label
+                  >
+                  <div class="col-8 input-with-icon">
+                    <input
+                      class="form-control"
+                      type="password"
+                      minlength="8"
+                      pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                      placeholder="請輸入您的密碼"
+                      id="LoginPass"
+                      required
+                    />
+                    <i
+                      class="bi bi-eye-fill ms-2"
+                      onclick="showhide('LoginPass','eyeLogin')"
+                      id="eyeLogin"
+                    ></i>
+                  </div>
+                </div>
+                <div class="d-grid gap-2 col-3 mx-auto">
+                  <button
+                    class="btn btn-primary bd-r-20 text-white mt-3"
+                    type="submit"
+                  >
+                    登入
+                  </button>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <a class="text-decoration-none link-primary" href="#"
+                    >忘記密碼？</a
+                  >
+                </div>
+                <p class="text-center my-3">或使用其他方式登入</p>
+                <button type="button" class="btn btn-outline-primary mx-2">
+                  <i class="bi bi-line"></i>
+                </button>
+                <button type="button" class="btn btn-outline-primary mx-2">
+                  <i class="bi bi-google"></i>
+                </button>
+              </form>
+              <form
+                onsubmit="return validatePassword();"
+                id="registerForm"
+                style="display: none"
+              >
+                <!-- 註冊表單的內容 -->
+                <div class="mb-4 row">
+                  <label for="registerName" class="col-3 col-form-label"
+                    >暱稱</label
+                  >
+                  <div class="col-8">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="請輸入您的暱稱"
+                      id="registerName"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="mb-4 row">
+                  <label for="RegisterEmail" class="col-3 col-form-label"
+                    >帳號</label
+                  >
+                  <div class="col-8">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="請輸入您的電子信箱"
+                      id="RegisterEmail"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="mb-3 row">
+                  <label for="RegisterPass" class="col-3 col-form-label"
+                    >密碼</label
+                  >
+                  <div class="col-8 input-with-icon">
+                    <input
+                      class="form-control"
+                      type="password"
+                      minlength="8"
+                      pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                      placeholder="請輸入至少8碼英數混合的密碼"
+                      id="RegisterPass"
+                      required
+                    />
+                    <i
+                      class="bi bi-eye-fill ms-2"
+                      onclick="showhide('RegisterPass','eyeRegister')"
+                      id="eyeRegister"
+                    ></i>
+                  </div>
+                </div>
+                <div class="mb-3 row">
+                  <label for="confirmPass" class="col-3 col-form-label"
+                    >確認密碼</label
+                  >
+                  <div class="col-8 input-with-icon">
+                    <input
+                      class="form-control"
+                      type="password"
+                      minlength="8"
+                      pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                      placeholder="請再次輸入密碼"
+                      id="confirmPass"
+                      required
+                    />
+                    <i
+                      class="bi bi-eye-fill ms-2"
+                      onclick="showhide('confirmPass','eyeConfirm')"
+                      id="eyeConfirm"
+                    ></i>
+                  </div>
+                </div>
+                <div class="d-grid gap-2 col-3 mx-auto">
+                  <button
+                    class="btn btn-primary bd-r-20 text-white mt-3"
+                    type="submit"
+                  >
+                    註冊
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      //顯示/隱藏密碼
+      function showhide(inputId, eyeId) {
+        const inputElement = document.querySelector(`#${inputId}`);
+        const eyeElement = document.querySelector(`#${eyeId}`);
+        if (inputElement.type === "password") {
+          inputElement.type = "text";
+          eyeElement.className = "bi bi-eye-slash-fill ms-2";
+        } else {
+          inputElement.type = "password";
+          eyeElement.className = "bi bi-eye-fill ms-2";
+        }
+      }
+      document
+        .getElementById("toggleSwitch")
+        .addEventListener("change", function () {
+          // 切換登入/註冊表單
+          const combinedForm = document.getElementById("combinedForm");
+          const formTitle = document.getElementById("formTitle");
+
+          const loginForm = document.getElementById("loginForm");
+          const registerForm = document.getElementById("registerForm");
+
+          const loginFormStyle = window.getComputedStyle(loginForm);
+
+          if (loginFormStyle.display === "none") {
+            loginForm.style.display = "block"; // 顯示登入表單
+            registerForm.style.display = "none"; // 隱藏註冊表單
+            formTitle.innerText = "會員登入"; // 切換標題
+          } else {
+            loginForm.style.display = "none"; // 隱藏登入表單
+            registerForm.style.display = "block"; // 顯示註冊表單
+            formTitle.innerText = "會員註冊"; // 切換標題
+          }
+        });
+    </script>
+    <!-- 導入JS CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap5-toggle@5.0.4/js/bootstrap5-toggle.ecmas.min.js"></script>
+  </body>
+</html>
