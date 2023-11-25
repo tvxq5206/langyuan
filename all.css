@@ -11389,6 +11389,9 @@ footer {
 footer .ccc {
   margin-top: 125px;
 }
+footer .footerContent {
+  margin-top: 125px;
+}
 footer .footer-snslink {
   display: flex;
   justify-content: center;
@@ -11415,6 +11418,13 @@ footer .text-p {
   margin: 0 0 24px 0;
 }
 footer .text-p .xxxx {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+footer .declareUse {
+  margin: 0 0 24px 0;
+}
+footer .declareUse .xxxx {
   font-size: 14px;
   margin-bottom: 0px;
 }
