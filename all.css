@@ -11696,6 +11696,14 @@ h1, .h1, h2, .h2, p {
      object-position: right;
 }
 
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-end {
+  text-align: end;
+}
+
 .height-stray-card {
   height: 300px;
 }
@@ -11774,4 +11782,20 @@ h1, .h1, h2, .h2, p {
   font-size: 28px;
   line-height: 120%;
   letter-spacing: 3px;
+}
+
+.carousel-container {
+  max-height: 640px;
+}
+
+.lang-index-container {
+  width: 400px;
+  height: 300px;
+}
+
+.h5-font-size {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 2px;
 }/*# sourceMappingURL=all.css.map */

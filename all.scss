@@ -10,13 +10,13 @@
 @import "components/_whichStatusStart3-2.scss";
 
 .main {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    font-family: 'Amatic SC', sans-serif;
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-family: 'Castoro', serif;
-    font-family: 'Noto Sans TC', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  font-family: 'Amatic SC', sans-serif;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Castoro', serif;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 
@@ -42,6 +42,14 @@
   object-position: right;
 }
 
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-end {
+  text-align: end;
+}
+
 .height-stray-card {
   height: 300px;
 }
@@ -50,57 +58,58 @@
   max-width: 600px;
 }
 
-.custom-container{
-  background-color:  #F0E8E0 ;
+.custom-container {
+  background-color: #F0E8E0;
   height: auto;
 }
 
-.about-box{
-overflow: hidden;
-position: relative;
+.about-box {
+  overflow: hidden;
+  position: relative;
 }
 
-.font-size-about-h1{
+.font-size-about-h1 {
   font-size: 48px;
 }
 
-.font-size-about-p{
+.font-size-about-p {
   font-size: 36px;
   line-height: 120%;
   letter-spacing: 3px;
 }
 
-.font-size-about-font{
+.font-size-about-font {
   font-family: 'Castoro', serif;
   font-family: 'Noto Sans TC', sans-serif;
 
 }
 
-.cute-cat{
+.cute-cat {
   transform: rotate(90deg);
   position: absolute;
   max-width: 150px;
-  top:0%;
-  left:20%;
+  top: 0%;
+  left: 20%;
 
 }
-.cute-dog{
+
+.cute-dog {
   transform: scaleX(-1) rotate(45deg);
   position: absolute;
   max-width: 150px;
-  left:5%;
-  top:65%;
+  left: 5%;
+  top: 65%;
 }
 
-.mail-font-color{
+.mail-font-color {
   color: #e4a52a;
 }
 
-.about-box1-margin{
+.about-box1-margin {
   margin: 80px;
 }
 
-.about-font-weight{
+.about-font-weight {
   font-weight: bold;
 }
 
@@ -123,3 +132,18 @@ position: relative;
   letter-spacing: 3px;
 }
 
+.carousel-container {
+  max-height: 640px;
+}
+
+.lang-index-container {
+  width: 400px;
+  height: 300px;
+}
+
+.h5-font-size {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 2px;
+}
