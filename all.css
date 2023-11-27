@@ -11785,7 +11785,7 @@ h1, .h1, h2, .h2, p {
 }
 
 .carousel-container {
-  max-height: 640px;
+  height: 640px;
 }
 
 .lang-index-container {
