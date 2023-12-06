@@ -11345,6 +11345,57 @@ textarea.form-control-lg {
   width: 500px;
 }
 
+.carousel-container {
+  position: relative;
+  z-index: 1;
+}
+
+.text-group-banner {
+  position: absolute;
+  top: 304px;
+  left: 312px;
+  z-index: 3;
+}
+
+.mask-container {
+  position: absolute;
+  top: 424px;
+  left: 0;
+  z-index: 0;
+}
+
+.cat-container {
+  position: absolute;
+  top: 580px;
+  left: 312px;
+  z-index: 2;
+}
+
+.intent-container {
+  position: absolute;
+  top: 740px;
+  left: 312px;
+  z-index: 4;
+}
+
+.kitty-position {
+  position: absolute;
+  top: 896px;
+  left: 1192px;
+}
+
+.doggo-position {
+  position: absolute;
+  top: 696px;
+  left: 1352px;
+}
+
+.deco-position {
+  position: absolute;
+  top: 836px;
+  left: 1520px;
+}
+
 .faq-container {
   width: 800px;
 }
