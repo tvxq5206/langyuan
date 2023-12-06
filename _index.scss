@@ -2,9 +2,21 @@
     width: 500px;
 }
 
+.mask-container {
+    position: absolute;
+    top: 424px;
+    left: 0;
+    z-index: 0;
+}
 .carousel-container {
     position: relative;
     z-index: 1;
+}
+.cat-container {
+    position: absolute;
+    top: 580px;
+    left: 312px;
+    z-index: 2;
 }
 
 .text-group-banner {
@@ -12,20 +24,6 @@
     top: 304px;
     left: 312px;
     z-index: 3;
-}
-
-.mask-container {
-    position: absolute;
-    top: 424px;
-    left: 0;
-    z-index: 0;
-}
-
-.cat-container {
-    position: absolute;
-    top: 580px;
-    left: 312px;
-    z-index: 2;
 }
 
 .intent-container {
@@ -51,4 +49,9 @@
     position: absolute;
     top: 836px;
     left: 1520px;
+}
+
+.lang-container {
+    position: absolute;
+    top: 1096px;
 }

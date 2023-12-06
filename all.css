@@ -11345,18 +11345,6 @@ textarea.form-control-lg {
   width: 500px;
 }
 
-.carousel-container {
-  position: relative;
-  z-index: 1;
-}
-
-.text-group-banner {
-  position: absolute;
-  top: 304px;
-  left: 312px;
-  z-index: 3;
-}
-
 .mask-container {
   position: absolute;
   top: 424px;
@@ -11364,11 +11352,23 @@ textarea.form-control-lg {
   z-index: 0;
 }
 
+.carousel-container {
+  position: relative;
+  z-index: 1;
+}
+
 .cat-container {
   position: absolute;
   top: 580px;
   left: 312px;
   z-index: 2;
+}
+
+.text-group-banner {
+  position: absolute;
+  top: 304px;
+  left: 312px;
+  z-index: 3;
 }
 
 .intent-container {
@@ -11394,6 +11394,11 @@ textarea.form-control-lg {
   position: absolute;
   top: 836px;
   left: 1520px;
+}
+
+.lang-container {
+  position: absolute;
+  top: 1096px;
 }
 
 .faq-container {
