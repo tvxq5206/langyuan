@@ -11401,6 +11401,18 @@ textarea.form-control-lg {
   top: 1096px;
 }
 
+.doggo-round-mask-xs {
+  margin: 5vh 0;
+  width: 100vw;
+  height: 90vh;
+  background: no-repeat top center;
+  background-size: cover;
+  -webkit-mask: url("material/mask/mask7_round.svg") no-repeat center center;
+  mask: url("material/mask/mask7_round.svg") no-repeat center center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
 .faq-container {
   width: 800px;
 }
