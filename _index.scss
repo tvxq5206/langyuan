@@ -56,14 +56,52 @@
     top: 1096px;
 }
 
-.doggo-round-mask-xs {
+.footprint-container {
+    position: absolute;
+    top: 1200px;
+    left: 160px;
+}
+
+.lang-position-container {
+    position: relative;
+}
+
+.name-breed-position {
+    position: relative;
+}
+
+.dialogbox-position-left {
+    position: absolute;
+    left: 315px;
+    z-index: 0;
+}
+
+.dialogbox-position-mid {
+    position: absolute;
+    left: 740px;
+    z-index: 0;
+}
+
+.dialogbox-position-right {
+    position: absolute;
+    left: 1163px;
+    z-index: 0;
+}
+
+/*.doggo-round-mask-xs {
     margin: 5vh 0;
     width: 100vw;
     height: 90vh;
-    background: /*url("material/images/little-boy-holds-black-white-kitty-his-shoulder.jpg")*/ no-repeat top center;
+    background: url("material/images/little-boy-holds-black-white-kitty-his-shoulder.jpg") no-repeat top center;
     background-size: cover;
     -webkit-mask: url("material/mask/mask7_round.svg") no-repeat center center;
     mask: url("material/mask/mask7_round.svg") no-repeat center center;
     -webkit-mask-size: contain;
     mask-size: contain;
+}*/
+
+.text-borderline {
+    border-color: #FFFFFF;
+    border-width: 0px 1px 0px 1px;
+    border-style: solid;
 }
