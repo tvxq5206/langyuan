@@ -31,6 +31,46 @@
       .pizzleContainerBottom {
         margin-top: -17%;
       }
+      .step01 {
+        position: absolute;
+        top: 120px;
+        left: 450px;
+      }
+      @media screen and (max-width: 767px) {
+        .puzzleImg01 {
+          position: relative;
+          top: 0px;
+          left: 0px;
+        }
+        .puzzleImg02 {
+          position: relative;
+          top: 0px;
+          left: -27px;
+        }
+        .puzzleImg03 {
+          position: relative;
+          top: 6px;
+          right: 40px;
+        }
+        .puzzleImg04 {
+          position: relative;
+          top: -6px;
+        }
+        .pizzleContainerTop {
+          margin-bottom: -10%;
+        }
+        .pizzleContainerBottom {
+          margin-top: -17%;
+        }
+        h3 {
+          font-size: 16px;
+        }
+        .step01 {
+          position: absolute;
+          top: 50px;
+          left: 190px;
+        }
+      }
     </style>
   </head>
   <body class="main bg-secondary3">
@@ -62,6 +102,9 @@
                 data-hover="puzzle_1_hover.svg"
                 class="puzzleImg01 puzzle img-fluid"
               />
+              <div class="step01">
+                <h3>填寫問卷</h3>
+              </div>
               <img
                 src="material/puzzle/puzzle 2.svg"
                 alt=""
@@ -101,23 +144,14 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      // const puzzleImg02 = document.querySelector(".puzzleImg02");
-      // puzzleImg02.addEventListener("mouseover", function (e) {
-      //   e.target.setAttribute("src", "material/puzzle/puzzle_2_hover.svg");
-      // });
-      // puzzleImg02.addEventListener("mouseout", function (e) {
-      //   e.target.setAttribute("src", "material/puzzle/puzzle 2.svg");
-      // });
       const puzzleImgs = document.querySelectorAll(".puzzle");
-      // 定义一个函数来处理鼠标悬停和离开事件
+
       function handleMouseEvents(e, hoverSrc, originalSrc) {
         e.target.setAttribute("src", hoverSrc);
         e.target.addEventListener("mouseout", function () {
           e.target.setAttribute("src", originalSrc);
         });
       }
-      // 获取所有图片元素并应用事件处理程序
-
       puzzleImgs.forEach(function (img) {
         const originalSrc = img.getAttribute("src");
         const hoverSrc = "material/puzzle/" + img.getAttribute("data-hover");
