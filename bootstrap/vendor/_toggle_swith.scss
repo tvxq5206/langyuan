@@ -309,8 +309,9 @@ button {
 	}
 
 	.face {
-		background-color: #fff;
-		background-image: url("https://cdn-icons-png.flaticon.com/512/2324/2324723.png");
+		background-image: url("material/icon/tab-cat.svg");
+		background-size: cover;
+		object-fit: cover;
 
 		&::after,
 		&::before {

@@ -11359,7 +11359,7 @@ textarea.form-control-lg {
 
 .cat-container {
   position: absolute;
-  top: 580px;
+  top: 684px;
   left: 312px;
   z-index: 2;
 }
@@ -11373,37 +11373,40 @@ textarea.form-control-lg {
 
 .intent-container {
   position: absolute;
-  top: 740px;
+  top: 844px;
   left: 312px;
   z-index: 4;
 }
 
 .kitty-position {
   position: absolute;
-  top: 896px;
+  top: 1000px;
   left: 1192px;
 }
 
 .doggo-position {
   position: absolute;
-  top: 696px;
+  top: 800px;
   left: 1352px;
 }
 
 .deco-position {
   position: absolute;
-  top: 836px;
+  top: 940px;
   left: 1520px;
+}
+
+.lang-relative {
+  position: relative;
+  margin-top: 456px;
 }
 
 .lang-container {
   position: absolute;
-  top: 1096px;
 }
 
 .footprint-container {
   position: absolute;
-  top: 1200px;
   left: 160px;
 }
 
@@ -11433,17 +11436,15 @@ textarea.form-control-lg {
   z-index: 0;
 }
 
-/*.doggo-round-mask-xs {
-    margin: 5vh 0;
-    width: 100vw;
-    height: 90vh;
-    background: url("material/images/little-boy-holds-black-white-kitty-his-shoulder.jpg") no-repeat top center;
-    background-size: cover;
-    -webkit-mask: url("material/mask/mask7_round.svg") no-repeat center center;
-    mask: url("material/mask/mask7_round.svg") no-repeat center center;
-    -webkit-mask-size: contain;
-    mask-size: contain;
-}*/
+.kitty-round-mask-xs {
+  width: 160px;
+  height: 160px;
+  background: url("material/images/little-boy-holds-black-white-kitty-his-shoulder.jpg") no-repeat top center;
+  background-size: cover;
+  -webkit-mask: url("material/mask/mask7_round.svg") no-repeat center center;
+  mask: url("material/mask/mask7_round.svg") no-repeat center center;
+}
+
 .text-borderline {
   border-color: #FFFFFF;
   border-width: 0px 1px 0px 1px;
@@ -11948,8 +11949,10 @@ button {
   visibility: visible;
 }
 [data-pet=dog] [data-pet=cat] .face {
-  background-color: #fff;
-  background-image: url("https://cdn-icons-png.flaticon.com/512/2324/2324723.png");
+  background-image: url("material/icon/tab-cat.svg");
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 [data-pet=dog] [data-pet=cat] .face::after, [data-pet=dog] [data-pet=cat] .face::before {
   visibility: visible;
