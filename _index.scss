@@ -97,13 +97,23 @@
     z-index: 0;
 }
 
-.kitty-round-mask-xs {
+/*.kitty-round-mask-xs {
     width: 160px;
     height: 160px;
     background: url(material/images/little-boy-holds-black-white-kitty-his-shoulder.jpg) no-repeat top center;
     background-size: cover;
-    -webkit-mask-image: url(material/mask/mask7_round.svg) no-repeat;
-    mask-image: url(material/mask/mask7_round.svg) no-repeat;
+    -webkit-mask: url(material/mask/mask7_round.svg) no-repeat;
+    mask: url(material/mask/mask7_round.svg) no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}*/
+
+.kitty-round-mask-xs {
+    width: 160px;
+    height: 160px;
+    background: url(material/images/little-boy-holds-black-white-kitty-his-shoulder.jpg) no-repeat top center/cover;
+    mask: url(material/mask/mask7_round.svg) center/contain no-repeat;
+    -webkit-mask: url(material/mask/mask7_round.svg) center/contain no-repeat;
 }
 
 .text-borderline {
