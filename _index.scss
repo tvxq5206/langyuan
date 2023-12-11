@@ -8,10 +8,12 @@
     left: 0;
     z-index: 0;
 }
+
 .carousel-container {
     position: relative;
     z-index: 1;
 }
+
 .cat-container {
     position: absolute;
     top: 684px;
@@ -23,6 +25,10 @@
     position: absolute;
     top: 304px;
     left: 312px;
+    z-index: 3;
+}
+
+.carousel-title {
     z-index: 3;
 }
 
@@ -92,12 +98,12 @@
 }
 
 .kitty-round-mask-xs {
-  width: 160px;
-  height: 160px;
-  background: url("material/images/little-boy-holds-black-white-kitty-his-shoulder.jpg") no-repeat top center;
-  background-size: cover;
-  -webkit-mask: url("material/mask/mask7_round.svg") no-repeat center center;
-  mask: url("material/mask/mask7_round.svg") no-repeat center center;
+    width: 160px;
+    height: 160px;
+    background: url(material/images/little-boy-holds-black-white-kitty-his-shoulder.jpg) no-repeat top center;
+    background-size: cover;
+    -webkit-mask-image: url(material/mask/mask7_round.svg) no-repeat;
+    mask-image: url(material/mask/mask7_round.svg) no-repeat;
 }
 
 .text-borderline {
