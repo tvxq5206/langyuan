@@ -9,7 +9,7 @@
       .puzzleImg01 {
         position: relative;
         top: 0%;
-        left: 0%;
+        left: -20px;
       }
       .puzzleImg02 {
         position: relative;
@@ -18,18 +18,22 @@
       }
       .puzzleImg03 {
         position: relative;
-        top: 27px;
-        right: 92px;
+        top: 48px;
+        right: 105px;
       }
       .puzzleImg04 {
         position: relative;
-        top: 0%;
+        top: 21px;
+        left: -21px;
       }
-      .pizzleContainerTop {
-        margin-bottom: -10%;
+      .puzzleContainerTop {
+        margin-bottom: -4%;
       }
-      .pizzleContainerBottom {
+      .puzzleContainerBottom {
         margin-top: -17%;
+      }
+      .puzzleContainer {
+        margin: auto;
       }
       .step01 {
         position: absolute;
@@ -55,15 +59,17 @@
         .puzzleImg04 {
           position: relative;
           top: -6px;
+          left: 0px;
         }
-        .pizzleContainerTop {
+        .puzzleContainerTop {
           margin-bottom: -10%;
         }
-        .pizzleContainerBottom {
+        .puzzleContainerBottom {
           margin-top: -17%;
         }
-        h3 {
-          font-size: 16px;
+        .puzzleContainer {
+          margin-left: auto;
+          margin-right: auto;
         }
         .step01 {
           position: absolute;
@@ -93,9 +99,9 @@
           </div>
         </div>
 
-        <div class="col-6 m-auto">
-          <div class="col-8 g-0">
-            <div class="d-inline-flex pizzleContainerTop">
+        <div class="col-6">
+          <div class="col-8 puzzleContainer">
+            <div class="d-inline-flex puzzleContainerTop">
               <img
                 src="material/puzzle/puzzle 1.svg"
                 alt=""
@@ -103,7 +109,7 @@
                 class="puzzleImg01 puzzle img-fluid"
               />
               <div class="step01">
-                <h3>填寫問卷</h3>
+                <!-- <h3>填寫問卷</h3> -->
               </div>
               <img
                 src="material/puzzle/puzzle 2.svg"
@@ -112,7 +118,7 @@
                 class="puzzleImg02 puzzle img-fluid"
               />
             </div>
-            <div class="d-inline-flex pizzleContainerBottom">
+            <div class="d-inline-flex puzzleContainerBottom">
               <img
                 src="material/puzzle/puzzle 4.svg"
                 alt=""
