@@ -95,7 +95,7 @@ button {
 	}
 }
 
-/*.eye {
+.eye {
 	width: 2rem;
 	height: 2rem;
 	background-color: #fff;
@@ -275,7 +275,7 @@ button {
 		transform: rotate(42deg);
 	}
 }
-*/
+
 [data-pet="dog"] {
 	.face {
 		/*background-color: #fddaaf;*/
@@ -284,7 +284,7 @@ button {
 		object-fit: cover;
 	}
 
-	/*.mouth {
+	.mouth {
 		background-color: #774a30;
 		border: 2px solid;
 	}
@@ -296,11 +296,11 @@ button {
 	.dog-ear {
 		visibility: visible;
 	}
-}*/
+}
 
 [data-pet="cat"] {
 	.pet {
-		transform: translate(10rem, -50%) rotate(360deg);
+		transform: translate(52px, -50%) rotate(360deg);
 
 		&::after,
 		&::before {
@@ -319,7 +319,7 @@ button {
 		}
 	}
 
-	/*.nose {
+.nose {
 		background-color: #e91f40;
 	}
 
@@ -329,6 +329,5 @@ button {
 
 	.cat-ear {
 		visibility: visible;
-	}*/
-}
+	}
 }

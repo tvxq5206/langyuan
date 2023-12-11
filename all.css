@@ -11730,202 +11730,169 @@ button {
   right: 0;
 }
 
-/*.eye {
-	width: 2rem;
-	height: 2rem;
-	background-color: #fff;
-	top: 35%;
-	border-radius: 43% 50% 42% 50%;
-	border: 2px solid;
-
-	&.eye-left {
-		left: 16%;
-	}
-
-	&.eye-right {
-		right: 16%;
-	}
-
-	&::after {
-		content: "";
-		position: absolute;
-		top: 7.5%;
-		left: 7.5%;
-		width: 85%;
-		height: 85%;
-		background-color: currentcolor;
-		border-radius: 45%;
-	}
+.eye {
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  top: 35%;
+  border-radius: 43% 50% 42% 50%;
+  border: 2px solid;
+}
+.eye.eye-left {
+  left: 16%;
+}
+.eye.eye-right {
+  right: 16%;
+}
+.eye::after {
+  content: "";
+  position: absolute;
+  top: 7.5%;
+  left: 7.5%;
+  width: 85%;
+  height: 85%;
+  background-color: currentcolor;
+  border-radius: 45%;
 }
 
 .eyebrow {
-	width: 1.5rem;
-	height: 0.25rem;
-	background-color: currentcolor;
-	border-radius: 50%;
-	top: 27%;
-	transform: rotate(var(--rotate));
-
-	&.eyebrow-left {
-		--rotate: -4deg;
-		left: 21%;
-	}
-
-	&.eyebrow-right {
-		--rotate: 4deg;
-		right: 21%;
-	}
+  width: 1.5rem;
+  height: 0.25rem;
+  background-color: currentcolor;
+  border-radius: 50%;
+  top: 27%;
+  transform: rotate(var(--rotate));
+}
+.eyebrow.eyebrow-left {
+  --rotate: -4deg;
+  left: 21%;
+}
+.eyebrow.eyebrow-right {
+  --rotate: 4deg;
+  right: 21%;
 }
 
 .mouth {
-	width: 60%;
-	height: 37.5%;
-	transform: translateX(-50%);
-	bottom: 0;
-	border-radius: 50% / 40% 40% 50% 50%;
-
-	&::before,
-	&::after {
-		content: "";
-		width: 1.25rem;
-		height: 1rem;
-		top: 50%;
-		border-radius: 50%;
-		box-shadow: 0 -2px currentcolor inset;
-		transform: translate(var(--translate));
-	}
-
-	&::before {
-		--translate: -100%, -100%;
-		left: 50%;
-	}
-
-	&::after {
-		--translate: 100%, -100%;
-		right: 50%;
-	}
+  width: 60%;
+  height: 37.5%;
+  transform: translateX(-50%);
+  bottom: 0;
+  border-radius: 50%/40% 40% 50% 50%;
+}
+.mouth::before, .mouth::after {
+  content: "";
+  width: 1.25rem;
+  height: 1rem;
+  top: 50%;
+  border-radius: 50%;
+  box-shadow: 0 -2px currentcolor inset;
+  transform: translate(var(--translate));
+}
+.mouth::before {
+  --translate: -100%, -100%;
+  left: 50%;
+}
+.mouth::after {
+  --translate: 100%, -100%;
+  right: 50%;
 }
 
 .nose {
-	width: 1rem;
-	height: 0.5rem;
-	top: 54.5%;
-	left: 50%;
-	transform: translate(-50%, 100%);
-	border-radius: 35% 35% 50% 50% / 20% 20% 80% 80%;
+  width: 1rem;
+  height: 0.5rem;
+  top: 54.5%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  border-radius: 35% 35% 50% 50%/20% 20% 80% 80%;
 }
 
 .whiskers {
-	visibility: hidden;
-	width: 45%;
-	height: 20%;
-	bottom: 20%;
-	border-top: 1px solid currentcolor;
-
-	&.whiskers-left {
-		--border-radius: 25% 50% 0 0;
-		--rotate: -15deg;
-		left: -20%;
-		border-radius: var(--border-radius);
-	}
-
-	&.whiskers-right {
-		--border-radius: 50% 25% 0 0;
-		--rotate: 15deg;
-		right: -20%;
-		border-radius: var(--border-radius);
-	}
-
-	&::before {
-		content: "";
-		width: 100%;
-		height: 100%;
-		top: 0.35rem;
-		left: 0;
-		border-radius: var(--border-radius);
-		border-top: 1px solid currentcolor;
-		transform: rotate(var(--rotate));
-	}
-
-	&::after {
-		content: "";
-		width: 100%;
-		height: 100%;
-		top: 0.75rem;
-		left: 0.1rem;
-		border-radius: var(--border-radius);
-		border-top: 1px solid currentcolor;
-		transform: rotate(var(--rotate));
-	}
+  visibility: hidden;
+  width: 45%;
+  height: 20%;
+  bottom: 20%;
+  border-top: 1px solid currentcolor;
+}
+.whiskers.whiskers-left {
+  --border-radius: 25% 50% 0 0;
+  --rotate: -15deg;
+  left: -20%;
+  border-radius: var(--border-radius);
+}
+.whiskers.whiskers-right {
+  --border-radius: 50% 25% 0 0;
+  --rotate: 15deg;
+  right: -20%;
+  border-radius: var(--border-radius);
+}
+.whiskers::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0.35rem;
+  left: 0;
+  border-radius: var(--border-radius);
+  border-top: 1px solid currentcolor;
+  transform: rotate(var(--rotate));
+}
+.whiskers::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0.75rem;
+  left: 0.1rem;
+  border-radius: var(--border-radius);
+  border-top: 1px solid currentcolor;
+  transform: rotate(var(--rotate));
 }
 
 .dog-ear {
-	visibility: hidden;
-	width: 1rem;
-	height: 2rem;
-	background-color: currentcolor;
-	top: 14%;
-	border-radius: 50% / 80% 80% 20% 20%;
-	transform: rotate(var(--rotate));
-
-	&.dog-ear-left {
-		--rotate: 18deg;
-		left: 4%;
-	}
-
-	&.dog-ear-right {
-		--rotate: -18deg;
-		right: 4%;
-	}
+  visibility: hidden;
+  width: 1rem;
+  height: 2rem;
+  background-color: currentcolor;
+  top: 14%;
+  border-radius: 50%/80% 80% 20% 20%;
+  transform: rotate(var(--rotate));
+}
+.dog-ear.dog-ear-left {
+  --rotate: 18deg;
+  left: 4%;
+}
+.dog-ear.dog-ear-right {
+  --rotate: -18deg;
+  right: 4%;
 }
 
 .cat-ear {
-	visibility: hidden;
-	z-index: -1;
-	width: 1.75rem;
-	height: 2rem;
-	background-color: #ff9343;
-	top: -2%;
-	border-radius: 50%/ 100% 100% 0% 0%;
-	border: 3px solid currentcolor;
-
-	&::before {
-		content: "";
-		top: 0;
-		left: 50%;
-		width: 80%;
-		height: 100%;
-		background-color: #e91f40;
-		border-radius: 50% / 100% 100% 0% 0%;
-		transform: translate(-50%, 25%);
-	}
-
-	&.cat-ear-left {
-		left: -1%;
-		transform: rotate(-42deg);
-	}
-
-	&.cat-ear-right {
-		right: -1%;
-		transform: rotate(42deg);
-	}
+  visibility: hidden;
+  z-index: -1;
+  width: 1.75rem;
+  height: 2rem;
+  background-color: #ff9343;
+  top: -2%;
+  border-radius: 50%/100% 100% 0% 0%;
+  border: 3px solid currentcolor;
 }
-*/
-[data-pet=dog] {
-  /*.mouth {
-  		background-color: #774a30;
-  		border: 2px solid;
-  	}
-
-  	.nose {
-  		background-color: currentcolor;
-  	}
-
-  	.dog-ear {
-  		visibility: visible;
-  	}
-  }*/
+.cat-ear::before {
+  content: "";
+  top: 0;
+  left: 50%;
+  width: 80%;
+  height: 100%;
+  background-color: #e91f40;
+  border-radius: 50%/100% 100% 0% 0%;
+  transform: translate(-50%, 25%);
 }
+.cat-ear.cat-ear-left {
+  left: -1%;
+  transform: rotate(-42deg);
+}
+.cat-ear.cat-ear-right {
+  right: -1%;
+  transform: rotate(42deg);
+}
+
 [data-pet=dog] .face {
   /*background-color: #fddaaf;*/
   background-image: url("material/icon/tab-dog.svg");
@@ -11933,32 +11900,39 @@ button {
   -o-object-fit: cover;
      object-fit: cover;
 }
-[data-pet=dog] [data-pet=cat] {
-  /*.nose {
-  	background-color: #e91f40;
-  }
-
-  .whiskers {
-  	visibility: visible;
-  }
-
-  .cat-ear {
-  	visibility: visible;
-  }*/
+[data-pet=dog] .mouth {
+  background-color: #774a30;
+  border: 2px solid;
 }
-[data-pet=dog] [data-pet=cat] .pet {
-  transform: translate(10rem, -50%) rotate(360deg);
+[data-pet=dog] .nose {
+  background-color: currentcolor;
 }
-[data-pet=dog] [data-pet=cat] .pet::after, [data-pet=dog] [data-pet=cat] .pet::before {
+[data-pet=dog] .dog-ear {
   visibility: visible;
 }
-[data-pet=dog] [data-pet=cat] .face {
+
+[data-pet=cat] .pet {
+  transform: translate(52px, -50%) rotate(360deg);
+}
+[data-pet=cat] .pet::after, [data-pet=cat] .pet::before {
+  visibility: visible;
+}
+[data-pet=cat] .face {
   background-image: url("material/icon/tab-cat.svg");
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
 }
-[data-pet=dog] [data-pet=cat] .face::after, [data-pet=dog] [data-pet=cat] .face::before {
+[data-pet=cat] .face::after, [data-pet=cat] .face::before {
+  visibility: visible;
+}
+[data-pet=cat] .nose {
+  background-color: #e91f40;
+}
+[data-pet=cat] .whiskers {
+  visibility: visible;
+}
+[data-pet=cat] .cat-ear {
   visibility: visible;
 }
 
