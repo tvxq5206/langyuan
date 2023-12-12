@@ -11563,28 +11563,32 @@ textarea.form-control-lg {
   width: 800px;
 }
 
-.puzzleImg01 {
+.puzzleBox {
   position: relative;
-  top: 0%;
-  left: -20px;
+}
+
+.puzzleImg01 {
+  position: absolute;
+  top: 45px;
+  left: 670px;
 }
 
 .puzzleImg02 {
-  position: relative;
-  top: 0%;
-  left: -80px;
+  position: absolute;
+  top: 45px;
+  left: 944px;
 }
 
 .puzzleImg03 {
-  position: relative;
-  top: 105px;
-  right: 105px;
+  position: absolute;
+  top: 318px;
+  right: 657px;
 }
 
 .puzzleImg04 {
-  position: relative;
-  top: 80px;
-  left: -21px;
+  position: absolute;
+  top: 291px;
+  left: 670px;
 }
 
 .puzzleContainerTop {
