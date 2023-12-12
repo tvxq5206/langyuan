@@ -114,8 +114,8 @@
     background: url(material/images/little-boy-holds-black-white-kitty-his-shoulder.jpg) no-repeat top center/cover;
     mask: url(material/mask/mask8_round.svg) center/contain no-repeat;
     -webkit-mask: url(material/mask/mask8_round.svg) center/contain no-repeat;
-    -webkit-mask-size: contain;
-    mask-size: contain;
+    -webkit-mask-size: cover;
+    mask-size: cover;
 }
 
 .doggo-round-mask-s {
@@ -126,6 +126,35 @@
     -webkit-mask: url(material/mask/mask8_round.svg) center/contain no-repeat;
     -webkit-mask-size: cover;
     mask-size: cover;
+}
+
+.doggo-left-mask {
+    background: url(material/images/3730313_73989.jpg) no-repeat top center/cover;
+    mask: url(material/mask/mask1.svg) center/contain no-repeat;
+    -webkit-mask: url(material/mask/mask1.svg) center/contain no-repeat;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+.doggo-mid-mask {
+    background: url(material/images/adorable-brown-white-basenji-dog-smiling-giving-high-five-isolated-white.jpg) no-repeat top center/cover;
+    mask: url(material/mask/mask4.svg) center/contain no-repeat;
+    -webkit-mask: url(material/mask/mask4.svg) center/contain no-repeat;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+.cat-right-mask {
+    background: url(material/images/red-white-cat-i-white-studio.jpg) no-repeat top center/cover;
+    mask: url(material/mask/mask3.svg) center/contain no-repeat;
+    -webkit-mask: url(material/mask/mask3.svg) center/contain no-repeat;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+.lang-index-container {
+    width: 400px;
+    height: 300px;
 }
 
 .text-borderline {
