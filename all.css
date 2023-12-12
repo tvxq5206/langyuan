@@ -11516,6 +11516,79 @@ textarea.form-control-lg {
   width: 800px;
 }
 
+.puzzleImg01 {
+  position: relative;
+  top: 0%;
+  left: -20px;
+}
+
+.puzzleImg02 {
+  position: relative;
+  top: 0%;
+  left: -80px;
+}
+
+.puzzleImg03 {
+  position: relative;
+  top: 105px;
+  right: 105px;
+}
+
+.puzzleImg04 {
+  position: relative;
+  top: 80px;
+  left: -21px;
+}
+
+.puzzleContainerTop {
+  margin-bottom: -4%;
+}
+
+.puzzleContainerBottom {
+  margin-top: -17%;
+}
+
+.puzzleContainer {
+  margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .puzzleImg01 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+  .puzzleImg02 {
+    position: relative;
+    top: 0px;
+    left: -27px;
+  }
+  .puzzleImg03 {
+    position: relative;
+    top: 6px;
+    right: 40px;
+  }
+  .puzzleImg04 {
+    position: relative;
+    top: -6px;
+    left: 0px;
+  }
+  .puzzleContainerTop {
+    margin-bottom: -10%;
+  }
+  .puzzleContainerBottom {
+    margin-top: -17%;
+  }
+  .puzzleContainer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .step01 {
+    position: absolute;
+    top: 50px;
+    left: 190px;
+  }
+}
 .nav-item-catpaw {
   display: inline-block;
 }
