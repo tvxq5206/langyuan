@@ -4,142 +4,105 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="all.css" />
     <style>
-      .puzzleImg01 {
-        position: relative;
-        top: 0%;
-        left: -20px;
-      }
-      .puzzleImg02 {
-        position: relative;
-        top: 0%;
-        left: -16%;
-      }
-      .puzzleImg03 {
-        position: relative;
-        top: 48px;
-        right: 105px;
-      }
-      .puzzleImg04 {
-        position: relative;
-        top: 21px;
-        left: -21px;
-      }
-      .puzzleContainerTop {
-        margin-bottom: -4%;
-      }
-      .puzzleContainerBottom {
-        margin-top: -17%;
-      }
-      .puzzleContainer {
-        margin: auto;
-      }
-      .step01 {
+      .puzzleIcon01 {
         position: absolute;
         top: 120px;
-        left: 450px;
-      }
-      @media screen and (max-width: 767px) {
-        .puzzleImg01 {
-          position: relative;
-          top: 0px;
-          left: 0px;
-        }
-        .puzzleImg02 {
-          position: relative;
-          top: 0px;
-          left: -27px;
-        }
-        .puzzleImg03 {
-          position: relative;
-          top: 6px;
-          right: 40px;
-        }
-        .puzzleImg04 {
-          position: relative;
-          top: -6px;
-          left: 0px;
-        }
-        .puzzleContainerTop {
-          margin-bottom: -10%;
-        }
-        .puzzleContainerBottom {
-          margin-top: -17%;
-        }
-        .puzzleContainer {
-          margin-left: auto;
-          margin-right: auto;
-        }
-        .step01 {
-          position: absolute;
-          top: 50px;
-          left: 190px;
-        }
+        left: 41%;
+        z-index: 1;
       }
     </style>
   </head>
   <body class="main bg-secondary3">
+    <!-- 拼圖區塊 -->
     <div class="container-fluid">
       <div class="row">
+        <!-- 貓貓探頭 -->
         <div class="col-3 g-0">
           <div class="col-10 position-relative top-0">
-            <img
-              src="material/bigCatDog/big cat-1.svg"
-              class="img-fluid mb-5"
-              alt=""
-            />
-            <div class="col-7">
+            <div
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <img
-                src="material/bigCatDog/big cat-2.svg"
-                class="img-fluid"
+                src="material/bigCatDog/big cat-1.svg"
+                class="img-fluid mb-5"
                 alt=""
               />
             </div>
+            <div class="col-7">
+              <div
+                data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+              >
+                <img
+                  src="material/bigCatDog/big cat-2.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
         </div>
-
+        <!-- 拼圖01-04 -->
         <div class="col-6">
           <div class="col-8 puzzleContainer">
             <div class="d-inline-flex puzzleContainerTop">
-              <img
-                src="material/puzzle/puzzle 1.svg"
-                alt=""
-                data-hover="puzzle_1_hover.svg"
-                class="puzzleImg01 puzzle img-fluid"
-              />
-              <div class="step01">
-                <!-- <h3>填寫問卷</h3> -->
-              </div>
-              <img
-                src="material/puzzle/puzzle 2.svg"
-                alt=""
-                data-hover="puzzle_2_hover.svg"
-                class="puzzleImg02 puzzle img-fluid"
-              />
+              <a href="3-2_whichStatus.html">
+                <img
+                  src="material/icon/icon 1.svg"
+                  class="puzzleIcon01 img-fluid"
+                  alt=""
+                />
+                <img
+                  src="material/puzzle/puzzle 1.svg"
+                  alt=""
+                  data-hover="puzzle_1_hover.svg"
+                  class="puzzleImg01 puzzle img-fluid"
+                />
+              </a>
+              <a href="3-0_strays_list.html">
+                <img
+                  src="material/puzzle/puzzle 2.svg"
+                  alt=""
+                  data-hover="puzzle_2_hover.svg"
+                  class="puzzleImg02 puzzle img-fluid"
+                />
+              </a>
             </div>
             <div class="d-inline-flex puzzleContainerBottom">
-              <img
-                src="material/puzzle/puzzle 4.svg"
-                alt=""
-                data-hover="puzzle_4_hover.svg"
-                class="puzzleImg04 puzzle img-fluid"
-              />
-              <img
-                src="material/puzzle/puzzle 3.svg"
-                alt=""
-                data-hover="puzzle_3_hover.svg"
-                class="puzzleImg03 puzzle img-fluid"
-              />
+              <a href="#">
+                <img
+                  src="material/puzzle/puzzle 4.svg"
+                  alt=""
+                  data-hover="puzzle_4_hover.svg"
+                  class="puzzleImg04 puzzle img-fluid"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="material/puzzle/puzzle 3.svg"
+                  alt=""
+                  data-hover="puzzle_3_hover.svg"
+                  class="puzzleImg03 puzzle img-fluid"
+                />
+              </a>
             </div>
           </div>
         </div>
+        <!-- 狗狗探頭 -->
         <div class="col-3 g-0">
-          <img
-            src="material/puzzle/big dog.svg"
-            class="img-fluid position-relative top-50"
-            alt=""
-          />
+          <div
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            <img src="material/puzzle/big dog.svg" class="img-fluid" alt="" />
+          </div>
         </div>
       </div>
     </div>
@@ -149,22 +112,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script>
-      const puzzleImgs = document.querySelectorAll(".puzzle");
-
-      function handleMouseEvents(e, hoverSrc, originalSrc) {
-        e.target.setAttribute("src", hoverSrc);
-        e.target.addEventListener("mouseout", function () {
-          e.target.setAttribute("src", originalSrc);
-        });
-      }
-      puzzleImgs.forEach(function (img) {
-        const originalSrc = img.getAttribute("src");
-        const hoverSrc = "material/puzzle/" + img.getAttribute("data-hover");
-        img.addEventListener("mouseover", function (e) {
-          handleMouseEvents(e, hoverSrc, originalSrc);
-        });
-      });
-    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="puzzle.js"></script>
   </body>
 </html>

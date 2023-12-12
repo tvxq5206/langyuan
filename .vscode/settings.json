@@ -1,4 +1,5 @@
 {
   "svg.preview.background": "transparent",
-  "editor.wordWrap": "on"
+  "editor.wordWrap": "on",
+  "liveServer.settings.port": 5501
 }

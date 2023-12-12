@@ -6887,6 +6887,18 @@ textarea.form-control-lg {
   top: 0 !important;
 }
 
+.top-5 {
+  top: 5% !important;
+}
+
+.top-20 {
+  top: 20% !important;
+}
+
+.top-25 {
+  top: 25% !important;
+}
+
 .top-50 {
   top: 50% !important;
 }
@@ -6897,6 +6909,18 @@ textarea.form-control-lg {
 
 .bottom-0 {
   bottom: 0 !important;
+}
+
+.bottom-5 {
+  bottom: 5% !important;
+}
+
+.bottom-20 {
+  bottom: 20% !important;
+}
+
+.bottom-25 {
+  bottom: 25% !important;
 }
 
 .bottom-50 {
@@ -6911,6 +6935,18 @@ textarea.form-control-lg {
   left: 0 !important;
 }
 
+.start-5 {
+  left: 5% !important;
+}
+
+.start-20 {
+  left: 20% !important;
+}
+
+.start-25 {
+  left: 25% !important;
+}
+
 .start-50 {
   left: 50% !important;
 }
@@ -6921,6 +6957,18 @@ textarea.form-control-lg {
 
 .end-0 {
   right: 0 !important;
+}
+
+.end-5 {
+  right: 5% !important;
+}
+
+.end-20 {
+  right: 20% !important;
+}
+
+.end-25 {
+  right: 25% !important;
 }
 
 .end-50 {
@@ -11468,6 +11516,79 @@ textarea.form-control-lg {
   width: 800px;
 }
 
+.puzzleImg01 {
+  position: relative;
+  top: 0%;
+  left: -20px;
+}
+
+.puzzleImg02 {
+  position: relative;
+  top: 0%;
+  left: -80px;
+}
+
+.puzzleImg03 {
+  position: relative;
+  top: 105px;
+  right: 105px;
+}
+
+.puzzleImg04 {
+  position: relative;
+  top: 80px;
+  left: -21px;
+}
+
+.puzzleContainerTop {
+  margin-bottom: -4%;
+}
+
+.puzzleContainerBottom {
+  margin-top: -17%;
+}
+
+.puzzleContainer {
+  margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .puzzleImg01 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+  .puzzleImg02 {
+    position: relative;
+    top: 0px;
+    left: -27px;
+  }
+  .puzzleImg03 {
+    position: relative;
+    top: 6px;
+    right: 40px;
+  }
+  .puzzleImg04 {
+    position: relative;
+    top: -6px;
+    left: 0px;
+  }
+  .puzzleContainerTop {
+    margin-bottom: -10%;
+  }
+  .puzzleContainerBottom {
+    margin-top: -17%;
+  }
+  .puzzleContainer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .step01 {
+    position: absolute;
+    top: 50px;
+    left: 190px;
+  }
+}
 .nav-item-catpaw {
   display: inline-block;
 }
