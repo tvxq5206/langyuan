@@ -114,6 +114,8 @@
     background: url(material/images/little-boy-holds-black-white-kitty-his-shoulder.jpg) no-repeat top center/cover;
     mask: url(material/mask/mask7_round.svg) center/contain no-repeat;
     -webkit-mask: url(material/mask/mask7_round.svg) center/contain no-repeat;
+    -webkit-mask-size: 150%;
+    mask-size: 150%;
 }
 
 .text-borderline {
