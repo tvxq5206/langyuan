@@ -109,13 +109,13 @@
 }*/
 
 .kitty-round-mask-xs {
-    width: 160px;
-    height: 160px;
+    width: 320px;
+    height: 320px;
     background: url(material/images/little-boy-holds-black-white-kitty-his-shoulder.jpg) no-repeat top center/cover;
     mask: url(material/mask/mask8_round.svg) center/contain no-repeat;
     -webkit-mask: url(material/mask/mask8_round.svg) center/contain no-repeat;
-    -webkit-mask-size: 200%;
-    mask-size: 200%;
+    -webkit-mask-size: contain;
+    mask-size: contain;
 }
 
 .doggo-round-mask-s {
