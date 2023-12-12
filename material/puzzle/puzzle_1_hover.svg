@@ -1,8 +1,10 @@
 <svg width="330" height="300" viewBox="0 0 330 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+
     <path fill-rule="evenodd" clip-rule="evenodd"
         d="M300 300.5V180.5C316.569 180.5 330 167.069 330 150.5C330 133.931 316.569 120.5 300 120.5V0.5C134.315 0.5 0 134.815 0 300.5H120C120 283.931 133.431 270.5 150 270.5C166.569 270.5 180 283.931 180 300.5H300Z"
         fill="#E4A52A" />
     <text x="70" y="170" style="fill:white;font-size:24px;font-weight:bold;">來了解自己是否符合
         <tspan x="70" y="200">領養浪浪資格吧！</tspan>
     </text>
+
 </svg>
