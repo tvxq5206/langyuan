@@ -11514,8 +11514,8 @@ textarea.form-control-lg {
   background: url(material/images/close-up-pet-lifestyle.jpg) no-repeat top center/cover;
   mask: url(material/mask/mask8_round.svg) center/contain no-repeat;
   -webkit-mask: url(material/mask/mask8_round.svg) center/contain no-repeat;
-  -webkit-mask-size: contain;
-  mask-size: contain;
+  -webkit-mask-size: cover;
+  mask-size: cover;
 }
 
 .text-borderline {
