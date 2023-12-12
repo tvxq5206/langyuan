@@ -11524,13 +11524,12 @@ textarea.form-control-lg {
   border-style: solid;
 }
 
-.sticky {
-  position: fixed;
-  z-index: 20;
-  top: 0;
-  width: 100%;
-}
-
+/*.sticky {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    width: 100%
+  }*/
 .faq-container {
   width: 800px;
 }
