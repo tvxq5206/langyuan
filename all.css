@@ -11393,6 +11393,10 @@ textarea.form-control-lg {
   width: 500px;
 }
 
+.main {
+  overflow: hidden;
+}
+
 .mask-container {
   position: absolute;
   top: 424px;
@@ -11552,6 +11556,13 @@ textarea.form-control-lg {
   border-color: #FFFFFF;
   border-width: 0px 1px 0px 1px;
   border-style: solid;
+}
+
+.card:hover {
+  background-color: #a98467;
+}
+.card:hover p {
+  color: #FFFFFF;
 }
 
 /*.sticky {
