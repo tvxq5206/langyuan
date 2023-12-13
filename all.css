@@ -11603,6 +11603,34 @@ textarea.form-control-lg {
   margin: auto;
 }
 
+.puzzleIcon01 {
+  position: absolute;
+  top: 165px;
+  left: 44.5%;
+  z-index: 1;
+}
+
+.puzzleIcon02 {
+  position: absolute;
+  top: 165px;
+  left: 54.5%;
+  z-index: 2;
+}
+
+.puzzleIcon03 {
+  position: absolute;
+  top: 380px;
+  left: 54.5%;
+  z-index: 3;
+}
+
+.puzzleIcon04 {
+  position: absolute;
+  top: 380px;
+  left: 44.5%;
+  z-index: 3;
+}
+
 @media screen and (max-width: 767px) {
   .puzzleImg01 {
     position: relative;

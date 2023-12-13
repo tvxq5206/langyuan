@@ -8,29 +8,54 @@
     left: 670px;
   }
 
-  .puzzleImg02 {
+.puzzleImg02 {
     position: absolute;
     top: 45px;
     left: 944px;
   }
-  .puzzleImg03 {
+.puzzleImg03 {
     position: absolute;
     top: 318px;
     right: 657px;
   }
-  .puzzleImg04 {
+.puzzleImg04 {
     position: absolute;
     top: 291px;
     left: 670px;
   }
-  .puzzleContainerTop {
+.puzzleContainerTop {
     margin-bottom: -4%;
   }
-  .puzzleContainerBottom {
+.puzzleContainerBottom {
     margin-top: -17%;
   }
-  .puzzleContainer {
+.puzzleContainer {
     margin: auto;
+  }
+
+.puzzleIcon01 {
+    position: absolute;
+    top: 165px;
+    left: 44.5%;
+    z-index: 1;
+  }
+.puzzleIcon02 {
+    position: absolute;
+    top: 165px;
+    left: 54.5%;
+    z-index: 2;
+  }
+.puzzleIcon03 {
+    position: absolute;
+    top: 380px;
+    left: 54.5%;
+    z-index: 3;
+  }
+.puzzleIcon04 {
+    position: absolute;
+    top: 380px;
+    left: 44.5%;
+    z-index: 3;
   }
 
   @media screen and (max-width: 767px) {
