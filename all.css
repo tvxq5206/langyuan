@@ -11406,8 +11406,9 @@ textarea.form-control-lg {
 }
 
 .cat-container {
+  display: inline;
   position: relative;
-  top: -20;
+  top: -20px;
   left: 191px;
   z-index: 2;
 }
