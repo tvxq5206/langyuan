@@ -1,3 +1,5 @@
+//拼圖 hover效果
+
 const puzzleImgs = document.querySelectorAll(".puzzle");
 
 function handleMouseEvents(e, hoverSrc, originalSrc) {
@@ -14,13 +16,21 @@ puzzleImgs.forEach(function (img) {
   });
 });
 
-const puzzleImg01 = document.querySelector(".puzzleImg01");
-const puzzleIcon01 = document.querySelector(".puzzleIcon01");
-puzzleImg01.addEventListener("mouseover", function () {
-  puzzleIcon01.style.display = "none";
-});
-puzzleImg01.addEventListener("mouseout", function () {
-  puzzleIcon01.style.display = "block";
+//Icon hover效果
+
+const puzzleImgsForIcon = document.querySelectorAll('[class^="puzzleImg"]');
+const puzzleIcons = document.querySelectorAll('[class^="puzzleIcon"]');
+
+Array.from(puzzleImgsForIcon).forEach((puzzleImg, index) => {
+  const puzzleIcon = puzzleIcons[index];
+
+  puzzleImg.addEventListener("mouseover", function () {
+    puzzleIcon.style.display = "none";
+  });
+
+  puzzleImg.addEventListener("mouseout", function () {
+    puzzleIcon.style.display = "block";
+  });
 });
 
 //AOS套件
