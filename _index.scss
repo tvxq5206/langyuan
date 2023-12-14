@@ -1,6 +1,9 @@
 .index {
     width: 500px;
 }
+.main{
+    overflow: hidden;
+}
 
 .mask-container {
     position: absolute;
@@ -15,8 +18,9 @@
 }
 
 .cat-container {
+    display: inline;
     position: relative;
-    top: -20;
+    top: -20px;
     left: 191px;
     z-index: 2;
 }
@@ -161,6 +165,13 @@
     border-color: #FFFFFF;
     border-width: 0px 1px 0px 1px;
     border-style: solid;
+}
+
+.card:hover{
+    background-color: #a98467;
+    p{
+        color: #FFFFFF;
+    }
 }
 
 /*.sticky {
