@@ -35,12 +35,12 @@ function init(){
 //串農業部領養平台API
 const langBreed = document.querySelector("#js-langBreed");
 
-let langData = [];
+let langData;
 let str = "";
 function getLangInfo(){
   axios.get(`https://data.moa.gov.tw/Service/OpenData/TransService.aspx?UnitId=QcbUEzN6E6DL&$top=50&$skip=0`)
   .then(function(response){
-    langData = response.data[0, 1, 2].animal_Variety;
+    langData = response.data[0].animal_Variety;
     renderLangList();
   })
 };
