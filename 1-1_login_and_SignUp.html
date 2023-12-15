@@ -129,6 +129,7 @@
                   <button
                     class="btn btn-primary bd-r-20 text-white mt-3"
                     type="submit"
+                    id="loginBottom"
                   >
                     登入
                   </button>
@@ -261,53 +262,14 @@
         </div>
       </div>
     </section>
-
-    <script>
-      //顯示/隱藏密碼
-      function showhide(inputId, eyeId) {
-        const inputElement = document.querySelector(`#${inputId}`);
-        const eyeElement = document.querySelector(`#${eyeId}`);
-        if (inputElement.type === "password") {
-          inputElement.type = "text";
-          eyeElement.className = "bi bi-eye-slash-fill ms-2";
-        } else {
-          inputElement.type = "password";
-          eyeElement.className = "bi bi-eye-fill ms-2";
-        }
-      }
-      document
-        .getElementById("toggleSwitch")
-        .addEventListener("change", function () {
-          // 切換登入/註冊表單
-          const combinedForm = document.getElementById("combinedForm");
-          const formTitle = document.getElementById("formTitle");
-
-          const loginForm = document.getElementById("loginForm");
-          const registerForm = document.getElementById("registerForm");
-          const toggleLabel = document.getElementById("toggleLabel");
-
-          const loginFormStyle = window.getComputedStyle(loginForm);
-
-          if (loginFormStyle.display === "none") {
-            loginForm.style.display = "block"; // 顯示登入表單
-            registerForm.style.display = "none"; // 隱藏註冊表單
-            formTitle.innerText = "會員登入"; // 切換標題
-            toggleLabel.innerHTML =
-              "<small>還沒加入會員?按此切換註冊表單</small>";
-          } else {
-            loginForm.style.display = "none"; // 隱藏登入表單
-            registerForm.style.display = "block"; // 顯示註冊表單
-            formTitle.innerText = "會員註冊"; // 切換標題
-            toggleLabel.innerHTML = "<small>註冊完請按此前往登入</small>";
-          }
-        });
-    </script>
     <!-- 導入JS CDN -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap5-toggle@5.0.4/js/bootstrap5-toggle.ecmas.min.js"></script>
+    <script src="login.js"></script>
   </body>
 </html>
