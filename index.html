@@ -340,34 +340,37 @@
               </h3>
               <img src="material/icon/headline deco 2.svg" class="ps-3" alt="" />
           </div>
-          <div class="container py-5">
-            <button onclick="changeGroup(-1)">Previous</button>
-            <button onclick="changeGroup(1)">Next</button>
-            
+          <div class="container pt-5 pb-3">
               <ul class="cardsGroup d-lg-flex list-unstyled justify-content-lg-center">
+                <button onclick="changeCard(-1)" style="background-color: transparent; border: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+                </button>
+                <!-- 重複的卡片結構函式 -->
                 <li class="cardItem">
-                      <a href="4-1_knowledge_of_stray_content.html" class="text-decoration-none text-body">
-                          <div class="card rounded-3 mx-3" style="width: 18rem">
-                              <img src="material/other/Mask group1.svg" class="card-img-top p-3" alt="..." />
-                              <div class="catFrame position-absolute bottom-25 end-5">
-                                  <img src="material/other/FrameCat.svg" alt="" class="frameCatHoverOne" />
-                              </div>
-                              <div class="card-body">
-                                  <p class="card-text pb-3">
-                                      2023.10.24
-                                      <br />
-                                      <span class="fw-bold">臘腸狗的常見疾病！</span>
-                                  </p>
-                              </div>
-                          </div>
-                      </a>
+                    <a href="4-1_knowledge_of_stray_content.html" class="text-decoration-none text-body">
+                        <div class="card rounded-3 mx-3" style="width: 18rem">
+                            <img src="material/other/Mask group1.svg" class="card-img-top p-3" alt="..." />
+                            <div class="catFrame position-absolute bottom-25 end-5">
+                                <img src="material/other/FrameCat.svg" alt="" class="frameCatHover catFrame" />
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text pb-3">
+                                    2023.10.24
+                                    <br />
+                                    <span class="fw-bold">臘腸狗的常見疾病！</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
                 </li>
                 <li class="cardItem">
                       <a href="4-1_knowledge_of_stray_content.html" class="text-decoration-none text-body">
                           <div class="card rounded-3 mx-3" style="width: 18rem">
                               <img src="material/other/Mask group2.svg" class="card-img-top p-3" alt="..." />
                               <div class="catFrame position-absolute bottom-25 end-5">
-                                  <img src="material/other/FrameCat.svg" alt="" class="frameCatHoverTwo" />
+                                  <img src="material/other/FrameCat.svg" alt="" class="frameCatHoverTwo catFrame" />
                               </div>
                               <div class="card-body">
                                   <p class="card-text pb-3">
@@ -384,7 +387,7 @@
                           <div class="card rounded-3 mx-3" style="width: 18rem">
                               <img src="material/other/Mask group3.svg" class="card-img-top p-3" alt="..." />
                               <div class="catFrame position-absolute bottom-25 end-5">
-                                  <img src="material/other/FrameCat.svg" alt="" class="frameCatHoverThree" />
+                                  <img src="material/other/FrameCat.svg" alt="" class="frameCatHoverThree catFrame" />
                               </div>
                               <div class="card-body">
                                   <p class="card-text pb-3">
@@ -399,9 +402,26 @@
                 <li class="cardItem">
                     <a href="4-1_knowledge_of_stray_content.html" class="text-decoration-none text-body">
                         <div class="card rounded-3 mx-3" style="width: 18rem">
+                            <img src="material/other/Mask group2.svg" class="card-img-top p-3" alt="..." />
+                            <div class="catFrame position-absolute bottom-25 end-5">
+                                <img src="material/other/FrameCat.svg" alt="" class="frameCatHoverTwo catFrame" />
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text pb-3">
+                                    2023.10.24
+                                    <br />
+                                    <span class="fw-bold">臘腸狗的常見疾病！</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="cardItem">
+                    <a href="4-1_knowledge_of_stray_content.html" class="text-decoration-none text-body">
+                        <div class="card rounded-3 mx-3" style="width: 18rem">
                             <img src="material/other/Mask group1.svg" class="card-img-top p-3" alt="..." />
                             <div class="catFrame position-absolute bottom-25 end-5">
-                                <img src="material/other/FrameCat.svg" alt="" class="frameCatHoverOne" />
+                                <img src="material/other/FrameCat.svg" alt="" class="frameCatHoverOne catFrame" />
                             </div>
                             <div class="card-body">
                                 <p class="card-text pb-3">
@@ -413,7 +433,29 @@
                         </div>
                     </a>
                 </li>
-              </ul>
+                <li class="cardItem">
+                    <a href="4-1_knowledge_of_stray_content.html" class="text-decoration-none text-body">
+                        <div class="card rounded-3 mx-3" style="width: 18rem">
+                            <img src="material/other/Mask group1.svg" class="card-img-top p-3" alt="..." />
+                            <div class="catFrame position-absolute bottom-25 end-5">
+                                <img src="material/other/FrameCat.svg" alt="" class="frameCatHoverOne" />
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text pb-3">
+                                    2023.10.24
+                                    <br />
+                                    <span class="fw-bold">臘腸狗的常見疾病！</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <button onclick="changeCard(1)" style="background-color: transparent; border: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+              </ul>  
           </div>
           <div class="moreInfo">
               <div class="container">

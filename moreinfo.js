@@ -29,6 +29,10 @@ frameCatHoverThree.addEventListener('mouseout',function(e){
 
 
 // 學習更多知識 Hover
+
+
+
+
 const moreInfoHover = document.querySelector('.imgHover');
 
 moreInfoHover.addEventListener('mouseover',function(e){
@@ -39,32 +43,27 @@ moreInfoHover.addEventListener('mouseout',function(e){
   e.target.setAttribute("src", "material/icon/moreinfo.svg");
 });
 
-let currentGroup = 0; // 当前显示的卡片组索引
+let currentCard = 0; // 目前顯示的卡片索引
 
-function showGroup(startIndex) {
+function showCards(startIndex) {
     const cards = document.querySelectorAll('.cardItem');
-    for (let i = 0; i < cards.length; i++) {
-        cards[i].style.display = 'none'; // 隐藏所有卡片
-    }
+    cards.forEach(card => card.style.display = 'none'); // 隱藏所有卡片
     for (let i = startIndex; i < startIndex + 3; i++) {
-        cards[i % cards.length].style.display = 'block'; // 显示指定索引的卡片
+        cards[i % cards.length].style.display = 'block'; // 顯示指定索引的卡片
     }
 }
 
-function changeGroup(direction) {
-    currentGroup = currentGroup + direction;
-    const totalGroups = Math.ceil(document.querySelectorAll('.cardItem').length / 3);
+function changeCard(direction) {
+    const totalCards = document.querySelectorAll('.cardItem').length;
 
-    // 循环显示卡片组，如果到了最后一组卡片，回到第一组
-    if (currentGroup >= totalGroups) {
-        currentGroup = 0;
-    } else if (currentGroup < 0) {
-        currentGroup = totalGroups - 1;
-    }
+    currentCard = (currentCard + direction + totalCards) % totalCards; // 更新卡片索引
 
-    showGroup(currentGroup * 1); // 显示当前组卡片
+    showCards(currentCard); // 顯示新的三張卡片
+
+    // 如果想持續同一方向循環，可以將下一次切換方向設為相同的值
+    // changeCard(direction); // 註解掉這行可以停止無限循環
 }
 
-// 初始化，显示第一组卡片
-showGroup(currentGroup * 3);
+// 初始化，顯示第一組三張卡片
+showCards(currentCard);
 
