@@ -64,15 +64,15 @@ function combineLangInfo(item) {
            <div class="w-100"></div>
            <div class="col-2">
                <p class="text-secondary1 text-center js-kindIcon">類別</p>
-               <img src="material/icon/dog.svg" alt="">
+               <p class="text-center">${item.animal_kind}</p>
            </div>
            <div class="col-2 text-borderline">
-               <p class="text-secondary1 text-center mb-2">年齡</p>
-               <p class="text-center" style="font-size: 16px">${item.animal_age}</p>
+               <p class="text-secondary1 text-center">年齡</p>
+               <p class="text-center">${item.animal_age}</p>
            </div>
            <div class="col-2">
                <p class="text-secondary1 text-center">性別</p>
-               <img class="js-genderIcon" src="material/icon/F.svg" alt="">
+               <p class="text-center">${item.animal_sex}</p>
            </div>
            <div class="w-100"></div>
            <div class="text-center col-8 mt-3">

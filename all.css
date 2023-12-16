@@ -11477,19 +11477,19 @@ textarea.form-control-lg {
 
 .dialogbox-position-left {
   position: absolute;
-  left: 315px;
+  left: 630px;
   z-index: 0;
 }
 
 .dialogbox-position-mid {
   position: absolute;
-  left: 740px;
+  left: 1055px;
   z-index: 0;
 }
 
 .dialogbox-position-right {
   position: absolute;
-  left: 1163px;
+  left: 1480px;
   z-index: 0;
 }
 
