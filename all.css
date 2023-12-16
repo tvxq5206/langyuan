@@ -12492,18 +12492,15 @@ h1, .h1, h2, .h2, p {
   letter-spacing: 4px;
 }
 
-/*.banner-mask {
-  -webkit-mask-image: url("material/mask/banner mask.svg") no-repeat center center;
-  mask: url("material/mask/banner mask.svg") no-repeat center center;
+.center-accordion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust the height as needed */
 }
 
-.lang-index-mask {
-  width: 400px;
-  height: 300px;
-  background-image: url(material/images/3730313_73989.jpg);
-  background-size: cover;
-  -webkit-mask: url("material/mask/beta.svg");
-  -webkit-mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: 100%;
-}*//*# sourceMappingURL=all.css.map */
+.step-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=all.css.map */
