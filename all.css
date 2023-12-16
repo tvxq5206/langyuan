@@ -12496,4 +12496,10 @@ h1, .h1, h2, .h2, p {
   justify-content: center;
   align-items: center;
   height: 100vh; /* Adjust the height as needed */
+}
+
+.step-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=all.css.map */
