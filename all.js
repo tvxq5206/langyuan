@@ -45,6 +45,7 @@ function getLangInfo() {
     .then(function (response) {
       langData = response.data;
       renderLangList();
+      changeLangInfoImage ();
     })
 };
 
@@ -84,6 +85,16 @@ function combineLangInfo(item){
 </div>`;
 }
 
+//置換圖片
+const langInfoLeft = document.querySelector(".doggo-left-mask");
+
+function changeLangInfoImage (){
+   let newImagePath = "url(${item.album_file})";
+   langInfoLeft.forEach(function(ele){
+    ele.style.backgroundImage = newImagePath;
+   })
+}
+
 //渲染全部的條件
 function renderLangList() {
   langData.forEach(function (item) {
@@ -92,21 +103,3 @@ function renderLangList() {
   langInfo.innerHTML = str;
 };
 
-//篩選功能
-const langInfoSelect = document.querySelector(".toggle-switch");
-
-langInfoSelect.addEventListener("change", function (e) {
-  const animal_Variety = e.target.value;
-  if (animal_Variety == "混種犬") {
-    renderProductList();
-    return;
-  };
-  let strLangSelect = "";
-  langData.forEach(function (item) {
-    if (item.animal_Variety == category) {
-      strLangSelect += combineLangInfo(item);
-    };
-  })
-  //利用上方已宣告的productList(抓到的DOM)填入剛組好的字串(html標籤)
-  langInfo.innerHTML = strLangSelect;
-});
