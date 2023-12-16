@@ -41,12 +41,10 @@ let langData = [];
 let str = "";
 
 function getLangInfo() {
-  axios.get(`https://data.moa.gov.tw/Service/OpenData/TransService.aspx?UnitId=QcbUEzN6E6DL&$top=10&$skip=0`)
+  axios.get(`https://data.moa.gov.tw/Service/OpenData/TransService.aspx?UnitId=QcbUEzN6E6DL&$top=3&$skip=0`)
     .then(function (response) {
       langData = response.data;
       renderLangList();
-      langGender();
-      langKind();
     })
 };
 
@@ -65,7 +63,7 @@ function combineLangInfo(item) {
        <div class="row justify-content-center mt-4">
            <div class="w-100"></div>
            <div class="col-2">
-               <p class="text-secondary1 text-center">類別</p>
+               <p class="text-secondary1 text-center js-kindIcon">類別</p>
                <img src="material/icon/dog.svg" alt="">
            </div>
            <div class="col-2 text-borderline">
@@ -74,7 +72,7 @@ function combineLangInfo(item) {
            </div>
            <div class="col-2">
                <p class="text-secondary1 text-center">性別</p>
-               <img class="js-genderIcon" src="material/icon/male.svg" alt="">
+               <img class="js-genderIcon" src="material/icon/F.svg" alt="">
            </div>
            <div class="w-100"></div>
            <div class="text-center col-8 mt-3">
@@ -97,7 +95,7 @@ function renderLangList() {
 };
 
 //性別圖示遍歷
-const genderIcon = document.querySelector(".js-genderIcon");
+/*const genderIcon = document.querySelector(".js-genderIcon");
 let strImg = "";
 function langGender(){
   langData.forEach(function(item){
@@ -123,3 +121,4 @@ function langKind(){
   })
   kindIcon.innerHTML = strKindImg;
 }
+*/

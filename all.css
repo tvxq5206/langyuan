@@ -11550,7 +11550,7 @@ textarea.form-control-lg {
 }
 
 .left-mask {
-  background: url() no-repeat top center/cover;
+  background: url() no-repeat center/cover;
   overflow: hidden;
   mask: url(material/mask/mask1.svg) center/contain no-repeat;
   -webkit-mask: url(material/mask/mask1.svg) center/contain no-repeat;
