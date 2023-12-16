@@ -92,3 +92,17 @@ function changeCard(direction) {
 // 初始化，顯示第一組三張卡片
 showCards(currentCard);
 
+// 获取按钮元素
+const backToTopButton = document.getElementById('backToTopButton');
+
+// 监听页面滚动事件
+window.addEventListener('scroll', function() {
+    // 检查页面滚动位置
+    if (document.documentElement.scrollTop > 0 || document.body.scrollTop > 0) {
+        // 如果滚动位置大于0，为按钮添加显示类名
+        backToTopButton.classList.add('show');
+    } else {
+        // 否则移除显示类名
+        backToTopButton.classList.remove('show');
+    }
+});
