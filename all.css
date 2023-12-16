@@ -11501,11 +11501,33 @@ textarea.form-control-lg {
   position: absolute;
 }
 
+.bg-3-position {
+  position: absolute;
+  top: 440px;
+  z-index: 0;
+}
+
 .yellow-cat-position {
   position: absolute;
   left: 1488px;
   top: -140px;
   z-index: 1;
+}
+
+.knowledgeOfStray-position {
+  position: relative;
+}
+
+.deco-bottom-position {
+  position: absolute;
+  left: 80px;
+  top: -120px;
+  z-index: 1;
+}
+
+.footprint-bottom-position {
+  position: absolute;
+  left: 1590px;
 }
 
 /*.kitty-round-mask-xs {
