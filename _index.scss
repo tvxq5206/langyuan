@@ -168,6 +168,7 @@
 
 .mid-mask {
     background: url() no-repeat top center/cover;
+    overflow: hidden;
     mask: url(material/mask/mask4.svg) center/contain no-repeat;
     -webkit-mask: url(material/mask/mask4.svg) center/contain no-repeat;
     -webkit-mask-size: 140%;
@@ -176,6 +177,7 @@
 
 .right-mask {
     background: url() no-repeat top center/cover;
+    overflow: hidden;
     mask: url(material/mask/mask3.svg) center/contain no-repeat;
     -webkit-mask: url(material/mask/mask3.svg) center/contain no-repeat;
     -webkit-mask-size: 150%;

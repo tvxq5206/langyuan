@@ -95,3 +95,4 @@ function renderLangList() {
   langInfo.innerHTML = str;
 };
 
+//性別圖示遍歷
