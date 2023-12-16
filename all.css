@@ -11497,6 +11497,17 @@ textarea.form-control-lg {
   position: relative;
 }
 
+.bg-2-position {
+  position: absolute;
+}
+
+.yellow-cat-position {
+  position: absolute;
+  left: 1488px;
+  top: -140px;
+  z-index: 1;
+}
+
 /*.kitty-round-mask-xs {
     width: 160px;
     height: 160px;
