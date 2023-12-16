@@ -45,7 +45,8 @@ function getLangInfo() {
     .then(function (response) {
       langData = response.data;
       renderLangList();
-      changeBackgroundImages();
+      langGender();
+      langKind();
     })
 };
 
@@ -73,7 +74,7 @@ function combineLangInfo(item) {
            </div>
            <div class="col-2">
                <p class="text-secondary1 text-center">性別</p>
-               <img src="material/icon/male.svg" alt="">
+               <img class="js-genderIcon" src="material/icon/male.svg" alt="">
            </div>
            <div class="w-100"></div>
            <div class="text-center col-8 mt-3">
@@ -96,3 +97,29 @@ function renderLangList() {
 };
 
 //性別圖示遍歷
+const genderIcon = document.querySelector(".js-genderIcon");
+let strImg = "";
+function langGender(){
+  langData.forEach(function(item){
+    if (item.animal_sex == "F"){
+      strImg += `<img class="js-genderIcon" src="material/icon/female.svg" alt="">`;
+    }else {
+      strImg += `<img class="js-genderIcon" src="material/icon/male.svg" alt="">`;
+    }
+  })
+  genderIcon.innerHTML = strImg;
+}
+
+//貓狗類別圖示遍歷
+const kindIcon = document.querySelector(".js-kindIcon");
+let strKindImg = "";
+function langKind(){
+  langData.forEach(function(item){
+    if (item.animal_kind == "狗"){
+      strKindImg += `<img src="material/icon/dog.svg" alt="">`;
+    }else {
+      strKindImg += `<img src="material/icon/cat.svg" alt="">`;
+    }
+  })
+  kindIcon.innerHTML = strKindImg;
+}
