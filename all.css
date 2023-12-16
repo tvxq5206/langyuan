@@ -12412,13 +12412,14 @@ h1, .h1, h2, .h2, p {
 }
 
 .font-size-about-h1 {
-  font-size: 48px;
+  font-size: 32px;
 }
 
 .font-size-about-p {
-  font-size: 36px;
-  line-height: 120%;
+  font-size: 20px;
+  line-height: 150%;
   letter-spacing: 3px;
+  padding: 20px 60px;
 }
 
 .font-size-about-font {
@@ -12429,17 +12430,17 @@ h1, .h1, h2, .h2, p {
 .cute-cat {
   transform: rotate(90deg);
   position: absolute;
-  max-width: 150px;
+  max-width: 180px;
   top: 0%;
-  left: 20%;
+  right: 10%;
 }
 
 .cute-dog {
-  transform: scaleX(-1) rotate(45deg);
+  transform: scaleX(-1);
   position: absolute;
-  max-width: 150px;
+  max-width: 160px;
   left: 5%;
-  top: 65%;
+  bottom: -10%;
 }
 
 .mail-font-color {
