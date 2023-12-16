@@ -48,45 +48,65 @@ function getLangInfo() {
     })
 };
 
+//重複的內容結合
+function combineLangInfo(item){
+   return `<div class="col">
+   <div class="text-end name-breed-position">
+       <p class="text-secondary1">${item.animal_Variety}</p>
+       <p class="h5-font-size">${item.animal_colour}</p>
+   </div>
+   <div class="row justify-content-center">
+       <div class="col">
+           <div class="doggo-left-mask lang-index-container img-fluid"></div>
+       </div>
+       <div class="row justify-content-center mt-4">
+           <div class="w-100"></div>
+           <div class="col-2">
+               <p class="text-secondary1 text-center">類別</p>
+               <img src="material/icon/dog.svg" alt="">
+           </div>
+           <div class="col-2 text-borderline">
+               <p class="text-secondary1 text-center mb-2">年齡</p>
+               <p class="text-center" style="font-size: 16px">${item.animal_age}</p>
+           </div>
+           <div class="col-2">
+               <p class="text-secondary1 text-center">性別</p>
+               <img src="material/icon/male.svg" alt="">
+           </div>
+           <div class="w-100"></div>
+           <div class="text-center col-8 mt-3">
+               <p>
+                   <img src="material/icon/map-marker-alt.svg" alt="">${item.animal_place}
+               </p>
+           </div>
+       </div>
+   </div>
+</div>`;
+}
 
 //渲染全部的條件
 function renderLangList() {
-  //已被填入陣列的資料，可以用forEach遍歷其中的資料
   langData.forEach(function (item) {
-    //利用上方已宣告的空字串組字串
-    str += `<div class="col">
-    <div class="text-end name-breed-position">
-        <p class="text-secondary1">${item.animal_Variety}</p>
-        <p class="h5-font-size">${item.animal_colour}</p>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col">
-            <div class="doggo-left-mask lang-index-container img-fluid"></div>
-        </div>
-        <div class="row justify-content-center mt-4">
-            <div class="w-100"></div>
-            <div class="col-2">
-                <p class="text-secondary1 text-center">類別</p>
-                <img src="material/icon/dog.svg" alt="">
-            </div>
-            <div class="col-2 text-borderline">
-                <p class="text-secondary1 text-center mb-2">年齡</p>
-                <p class="text-center" style="font-size: 16px">${item.animal_age}</p>
-            </div>
-            <div class="col-2">
-                <p class="text-secondary1 text-center">性別</p>
-                <img src="material/icon/male.svg" alt="">
-            </div>
-            <div class="w-100"></div>
-            <div class="text-center col-8 mt-3">
-                <p>
-                    <img src="material/icon/map-marker-alt.svg" alt="">${item.animal_place}
-                </p>
-            </div>
-        </div>
-    </div>
-</div>`;
+    str += combineLangInfo(item);
   })
-  //利用上方已宣告的productList(抓到的DOM)填入剛組好的字串(html標籤)
   langInfo.innerHTML = str;
 };
+
+//篩選功能
+const langInfoSelect = document.querySelector(".toggle-switch");
+
+langInfoSelect.addEventListener("change", function (e) {
+  const animal_Variety = e.target.value;
+  if (animal_Variety == "混種犬") {
+    renderProductList();
+    return;
+  };
+  let strLangSelect = "";
+  langData.forEach(function (item) {
+    if (item.animal_Variety == category) {
+      strLangSelect += combineLangInfo(item);
+    };
+  })
+  //利用上方已宣告的productList(抓到的DOM)填入剛組好的字串(html標籤)
+  langInfo.innerHTML = strLangSelect;
+});
