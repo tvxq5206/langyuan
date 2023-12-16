@@ -201,11 +201,16 @@
     border-style: solid;
 }
 
-.cardItem:hover{
+.cardList:hover{
     background-color: #a98467;
     p{
         color: #FFFFFF;
     }
+}
+.single-ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 /*.sticky {

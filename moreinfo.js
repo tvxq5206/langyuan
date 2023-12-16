@@ -1,7 +1,9 @@
 const frameCatHoverOne = document.querySelector('.frameCatHoverOne');
 const frameCatHoverTwo = document.querySelector('.frameCatHoverTwo');
 const frameCatHoverThree = document.querySelector('.frameCatHoverThree');
-
+const frameCatHoverFore = document.querySelector('.frameCatHoverFore');
+const frameCatHoverFive = document.querySelector('.frameCatHoverFive');
+const frameCatHoverSix = document.querySelector('.frameCatHoverSix');
 
 frameCatHoverOne.addEventListener('mouseover',function(e){
   e.target.setAttribute("src", "material/icon_hover/moreInfo-hover.svg");
@@ -20,6 +22,29 @@ frameCatHoverTwo.addEventListener('mouseout',function(e){
 });
 
 frameCatHoverThree.addEventListener('mouseover',function(e){
+  e.target.setAttribute("src", "material/icon_hover/moreInfo-hover.svg");
+});
+
+frameCatHoverThree.addEventListener('mouseout',function(e){
+  e.target.setAttribute("src", "material/other/FrameCat.svg");
+});
+
+frameCatHoverFore.addEventListener('mouseover',function(e){
+  e.target.setAttribute("src", "material/icon_hover/moreInfo-hover.svg");
+});
+
+frameCatHoverFore.addEventListener('mouseout',function(e){
+  e.target.setAttribute("src", "material/other/FrameCat.svg");
+});
+
+frameCatHoverFive.addEventListener('mouseover',function(e){
+  e.target.setAttribute("src", "material/icon_hover/moreInfo-hover.svg");
+});
+
+frameCatHoverSix.addEventListener('mouseout',function(e){
+  e.target.setAttribute("src", "material/other/FrameCat.svg");
+});
+frameCatHoverSix.addEventListener('mouseover',function(e){
   e.target.setAttribute("src", "material/icon_hover/moreInfo-hover.svg");
 });
 
