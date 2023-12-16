@@ -11493,6 +11493,10 @@ textarea.form-control-lg {
   z-index: 0;
 }
 
+.puzzleBox-position {
+  position: relative;
+}
+
 /*.kitty-round-mask-xs {
     width: 160px;
     height: 160px;
