@@ -5142,7 +5142,7 @@ textarea.form-control-lg {
   z-index: 1;
   color: #495057;
   text-decoration: none;
-  background-color: #EDDDD0;
+  background-color: #f8f9fa;
 }
 .list-group-item-action:active {
   color: #212529;
@@ -5155,8 +5155,8 @@ textarea.form-control-lg {
   padding: 0.5rem 1rem;
   color: #212529;
   text-decoration: none;
-  background-color: #A98467;
-  border: 1px solid #F0E8E0;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
 }
 .list-group-item:first-child {
   border-top-left-radius: inherit;
@@ -5169,7 +5169,7 @@ textarea.form-control-lg {
 .list-group-item.disabled, .list-group-item:disabled {
   color: #6c757d;
   pointer-events: none;
-  background-color: #A98467;
+  background-color: #fff;
 }
 .list-group-item.active {
   z-index: 2;
