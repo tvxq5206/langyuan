@@ -11593,11 +11593,17 @@ textarea.form-control-lg {
   border-style: solid;
 }
 
-.card:hover {
+.cardList:hover {
   background-color: #a98467;
 }
-.card:hover p {
+.cardList:hover p {
   color: #FFFFFF;
+}
+
+.single-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /*.sticky {
