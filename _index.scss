@@ -219,4 +219,17 @@
     top: 0;
     width: 100%
   }*/
+/* 初始时隐藏按钮 */
+#backToTopButton {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* 添加淡入淡出过渡效果 */
+}
+
+/* 按钮可见时完全显示 */
+#backToTopButton.show {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
 
