@@ -11,8 +11,8 @@ const togglePet = () => {
         dogInfo.style.display = "block";
         catInfo.style.display = "none";
     } else {
-        dogInfo.style.display = "none";
-        catInfo.style.display = "block";
+        dogInfo.style.display = "block";
+        catInfo.style.display = "none";
     }
 
     // 切換寵物
