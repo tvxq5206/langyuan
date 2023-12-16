@@ -92,7 +92,7 @@ function renderLangList() {
     str += combineLangInfo(item);
   })
   langInfo.innerHTML = str;
-};
+}; 
 
 //性別圖示遍歷
 /*const genderIcon = document.querySelector(".js-genderIcon");
