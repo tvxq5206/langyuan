@@ -45,20 +45,21 @@ function getLangInfo() {
     .then(function (response) {
       langData = response.data;
       renderLangList();
-      changeLangInfoImage ();
+      changeBackgroundImages();
     })
 };
 
 //重複的內容結合
-function combineLangInfo(item){
-   return `<div class="col">
+function combineLangInfo(item) {
+  return `<div class="col">
    <div class="text-end name-breed-position">
        <p class="text-secondary1">${item.animal_Variety}</p>
        <p class="h5-font-size">${item.animal_colour}</p>
    </div>
    <div class="row justify-content-center">
        <div class="col">
-           <div class="doggo-left-mask lang-index-container img-fluid"></div>
+           <div class="left-mask lang-index-container img-fluid">
+           <img id="apiImage" src="${item.album_file}"></div>
        </div>
        <div class="row justify-content-center mt-4">
            <div class="w-100"></div>
@@ -83,17 +84,8 @@ function combineLangInfo(item){
        </div>
    </div>
 </div>`;
-}
+};
 
-//置換圖片
-const langInfoLeft = document.querySelector(".doggo-left-mask");
-
-function changeLangInfoImage (){
-   let newImagePath = "url(${item.album_file})";
-   langInfoLeft.forEach(function(ele){
-    ele.style.backgroundImage = newImagePath;
-   })
-}
 
 //渲染全部的條件
 function renderLangList() {

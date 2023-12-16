@@ -112,7 +112,6 @@
 .bg-3-position {
     position: absolute;
     top: 440px;
-    z-index: 0;
 }
 
 .yellow-cat-position {
@@ -158,24 +157,25 @@
     mask-size: 220%;
 }
 
-.doggo-left-mask {
-    background: url(material/images/3730313_73989.jpg) no-repeat top center/cover;
+.left-mask {
+    background: url() no-repeat top center/cover;
+    overflow: hidden;
     mask: url(material/mask/mask1.svg) center/contain no-repeat;
     -webkit-mask: url(material/mask/mask1.svg) center/contain no-repeat;
     -webkit-mask-size: 150%;
     mask-size: 150%;
 }
 
-.doggo-mid-mask {
-    background: url(material/images/adorable-brown-white-basenji-dog-smiling-giving-high-five-isolated-white.jpg) no-repeat top center/cover;
+.mid-mask {
+    background: url() no-repeat top center/cover;
     mask: url(material/mask/mask4.svg) center/contain no-repeat;
     -webkit-mask: url(material/mask/mask4.svg) center/contain no-repeat;
     -webkit-mask-size: 140%;
     mask-size: 140%;
 }
 
-.cat-right-mask {
-    background: url(material/images/red-white-cat-i-white-studio.jpg) no-repeat top center/cover;
+.right-mask {
+    background: url() no-repeat top center/cover;
     mask: url(material/mask/mask3.svg) center/contain no-repeat;
     -webkit-mask: url(material/mask/mask3.svg) center/contain no-repeat;
     -webkit-mask-size: 150%;
@@ -185,6 +185,12 @@
 .lang-index-container {
     width: 400px;
     height: 300px;
+}
+
+#apiImage {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any extra spacing below the image */
 }
 
 .text-borderline {
