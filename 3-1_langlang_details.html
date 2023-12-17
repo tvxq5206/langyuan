@@ -4,44 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="all.css">
+    <link rel="shortcut icon" href="material/icon/favicon.ico" type="image/x-icon">
     <title>浪浪詳細資訊</title>
 </head>
 <body>
     <div class="main bg-secondary3">
-        <nav class="navbar navbar-expand-lg sticky-top justify-content-between pad-res-x0">
+        <nav class="navbar navbar-expand-lg justify-content-between pad-res-x0 sticky" id="navbar-fixed">
             <a class="navbar-brand mar-lef-60" href="#">
-                <img class="xxx" src="material/logo/logo 3.svg" alt="langyuan-logo">
+                <img class="xxx" src="material/logo/logo 3.svg" alt="langyuan-logo" />
             </a>
             <div class="bg-white bd-r-navbar">
-                <div class="collapse navbar-collapse "  id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0 pd-navbar-py" style="padding:0px 40px;">
-                        <li class="nav-item">
-                            <a class="nav-link pd-navbar-a text-gray" href="#">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 pd-navbar-py" style="padding: 0px 40px">
+                        <li class="nav-item-catpaw">
+                            <a class="nav-link pd-navbar-a text-gray" href="index.html">
                                 首頁
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link pd-navbar-a text-gray" href="#">
+                        <li class="nav-item-catpaw">
+                            <a class="nav-link pd-navbar-a text-gray" href="5-0_aboutus.html">
                                 關於我們
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link pd-navbar-a text-gray" href="#">
+                        <li class="nav-item-catpaw dropdown">
+                            <a class="nav-link pd-navbar-a text-gray dropdown-toggle" href="#" id="adoptDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 浪浪認養
                             </a>
+                            <ul class="dropdown-menu" aria-labelledby="adoptDropdown">
+                                <!-- 下拉選單項目在這裡 -->
+                                <li><a class="dropdown-item" href="3-4_govInfo.html">政府補助資訊</a></li>
+                                <li><a class="dropdown-item" href="3-0_strays_list.html">浪浪領養</a></li>
+                                <li><a class="dropdown-item" href="3-2_whichStatus.html">填寫問卷</a></li>
+                                <li><a class="dropdown-item" href="3-3_adoption_process.html">浪浪領養流程及注意事項</a></li>
+                                <!-- 需要時可新增更多下拉選單項目 -->
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link pd-navbar-a text-gray" href="#">
+                        <li class="nav-item-catpaw">
+                            <a class="nav-link pd-navbar-a text-gray" href="4-0_knowledge_of_stray.html">
                                 浪浪小學堂
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link pd-navbar-a text-gray" href="index-feedback.html">
+                        <li class="nav-item-catpaw dropdown">
+                            <a class="nav-link pd-navbar-a text-gray dropdown-toggle" href="#" id="faqDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 常見問題
                             </a>
+                            <ul class="dropdown-menu" aria-labelledby="faqDropdown">
+                                <!-- 下拉選單項目在這裡 -->
+                                <li><a class="dropdown-item" href="6-0_FAQ.html">常見問題</a></li>
+                                <li><a class="dropdown-item" href="6-1_feedback_form.html">建議與回饋</a></li>
+                                <!-- 需要時可新增更多下拉選單項目 -->
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link pd-navbar-a text-gray" href="#">
+                        <li class="nav-item-catpaw">
+                            <a class="nav-link text-gray" href="1-1_login_and_SignUp.html" style="padding: 40px 20px">
                                 會員專區
                             </a>
                         </li>
@@ -62,33 +77,6 @@
             .loginStyle strong{
                 letter-spacing: 1.2px;
             }
-            /* .linkBasicsetting{
-                text-decoration: none;
-                color: #000;
-            }
-            .btnStyle{
-                padding: 10px 100px;
-                background-color: #fff;
-                border: 1px solid #000;
-                border-radius: 10px;
-                letter-spacing: 2px;
-            }
-            .btnStyle:hover{
-                background-color: #E4A52A;
-                color: #fff;
-            }
-            .btnGoPlatform{
-                padding: 10px 100px;
-                background-color: #A98467;
-                border: 1px solid #000;
-                color: #fff;
-                border-radius: 10px;
-                letter-spacing: 2px;
-            }
-            .btnGoPlatform:hover{
-                background-color: #E4A52A;
-                color: #000;
-            } */
             .slogan{
                 background-color: #E4A52A;
                 border-radius: 15px;
@@ -110,15 +98,6 @@
         </style>
 
         <div class="lang_details my-5">
-            <!-- style=" background-image: url();" -->
-            <!-- <div class="banner mt-5" >
-                <img class="img-fluid" src="material/other/浪浪資訊-banner.svg" alt="">
-            </div> -->
-            <!-- <div class="banner-langdetails">
-                <figure>
-                    <img class="img-fluid" src="material/other/浪浪資訊-banner.svg" alt="">
-                </figure>
-            </div> -->
             <div class="container">
                 <div class="banner-langdetails">
                         <figure>
@@ -140,9 +119,6 @@
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button> -->
-                                <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 3"></button> -->
                             </div>
                             <div class="carousel-inner bg-white">
                                 <div class="carousel-item active ">
@@ -154,15 +130,6 @@
                                 <div class="carousel-item">
                                     <img src="https://www.pet.gov.tw/Upload/pic/1696486080617.png" class="d-block hwtest" alt="...">
                                 </div>
-                                <!-- <div class="carousel-item">
-                                    <img src="..." class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="..." class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="..." class="d-block w-100" alt="...">
-                                </div> -->
                             </div>
                         </div>
                 </div>
@@ -196,22 +163,14 @@
                                     <!-- border border-dark -->
                                     <strong class="fs-6 px-3">請先登入會員查看聯絡資訊與適性測驗</strong>
                                     <div class="mt-3 mb-2">
-                                        <button type="button" class="btn btn-primary btn-lg px-5 border border-dark borderRadius-all">前往登入</button>
+                                        <button type="button" class="btn btn-primary btn-lg px-5 border border-dark borderRadius-all">
+                                            <a href="1-1_login_and_SignUp.html" class="text-decoration-none text-dark">前往登入</a>
+                                        </button>
                                     </div>
-                                    
-                                    <!-- 原本按鈕 -->
-                                    <!-- <div class="my-4  ">
-                                        <a href="" class="btnStyle linkBasicsetting fs-4 fw-bold">
-                                            前往登入
-                                        </a>
-                                    </div> -->
                                 </div>
                                 <div class="text-center my-5">
-                                    <button type="button" class="btn btn-lg btn-secondary1 px-5 text-white border border-dark borderRadius-all">前往領養平台</button>
-                                    <!-- 原本按鈕 -->
-                                    <!-- <a href="" class="linkBasicsetting btnGoPlatform fs-6">
-                                        前往領養平台
-                                    </a> -->
+                                    <button type="button" class="btn btn-lg btn-secondary1 px-5 text-white border border-dark borderRadius-all">
+                                        <a href="3-0_strays_list.html" class="text-decoration-none text-white">前往領養平台</a></button>
                                 </div>
                             </div>
                         </div>
@@ -226,9 +185,11 @@
                 </div>
             </div>
         </div>
-        <footer>
+        <footer class="pt-5">
             <div class="footer">
-                <div class="footerContent">
+                <!-- footer-container ft-mg-t100 -->
+                <div class="ccc">
+                    <!-- text-center -->
                     <div class="text-center">
                         <div class="footer-snslink">
                             <a class="ft-mg-r40" href="#">
@@ -240,35 +201,35 @@
                                 <p class="xxxx">Instagram</p>
                             </a>
                         </div>
-                    <ul class="">
-                        <li class="">
-                            <a class="" href="#">關於我們</a>
-                        </li>
-                        <li class="">
-                            <a class="" href="#">聯絡我們</a>
-                        </li>
-                        <li class="">
-                            <a class="" href="#">常見問題</a>
-                        </li>
-                        <li class="">
-                            <a class="" href="#">網站條款</a>
-                        </li>
-                    </ul>
-                    <div class="declareUse">
-                        <p class="">
-                            Copyright @2023 Search for LangYuan All rights reserved.
-                        </p>
+                        <ul class="">
+                            <li class="">
+                                <a class="" href="5-0_aboutus.html">關於我們</a>
+                            </li>
+                            <li class="">
+                                <a class="" href="6-1_feedback_form.html">聯絡我們</a>
+                            </li>
+                            <li class="">
+                                <a class="" href="6-0_FAQ.html">常見問題</a>
+                            </li>
+                            <li class="">
+                                <a class="" href="#">網站條款</a>
+                            </li>
+                        </ul>
+                        <div class="text-p">
+                            <!-- text-p ft-mg-b24 -->
+                            <p class="">
+                                Copyright @2023 Search for LangYuan All rights reserved.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
         </footer>
-        <div class="footer-text text-center">
-            <p class="">
-                本專題僅為學習用途·不做任何商業使用·圖片來源請見 github repo
-            </p>
-        </div>
     </div>
-
+    <div class="footer-text text-center">
+        <p class="">
+            本專題僅為學習用途·不做任何商業使用·圖片來源請見 github repo
+        </p>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

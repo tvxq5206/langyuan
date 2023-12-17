@@ -5,46 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="all.css">
+    <link rel="shortcut icon" href="material/icon/favicon.ico" type="image/x-icon">
     <title>宣傳政府資訊</title>
 </head>
 
 <body>
     <div class="bg-secondary3">
         <div class="main">
-            <nav class="navbar navbar-expand-lg sticky-top justify-content-between pad-res-x0">
+            <nav class="navbar navbar-expand-lg justify-content-between pad-res-x0 sticky" id="navbar-fixed">
                 <a class="navbar-brand mar-lef-60" href="#">
-                    <img class="xxx" src="material/logo/logo 3.svg" alt="langyuan-logo">
+                    <img class="xxx" src="material/logo/logo 3.svg" alt="langyuan-logo" />
                 </a>
                 <div class="bg-white bd-r-navbar">
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav mb-2 mb-lg-0 pd-navbar-py" style="padding:0px 40px;">
-                            <li class="nav-item">
-                                <a class="nav-link pd-navbar-a text-gray" href="#">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0 pd-navbar-py" style="padding: 0px 40px">
+                            <li class="nav-item-catpaw">
+                                <a class="nav-link pd-navbar-a text-gray" href="index.html">
                                     首頁
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link pd-navbar-a text-gray" href="#">
+                            <li class="nav-item-catpaw">
+                                <a class="nav-link pd-navbar-a text-gray" href="5-0_aboutus.html">
                                     關於我們
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link pd-navbar-a text-gray" href="#">
+                            <li class="nav-item-catpaw dropdown">
+                                <a class="nav-link pd-navbar-a text-gray dropdown-toggle" href="#" id="adoptDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     浪浪認養
                                 </a>
+                                <ul class="dropdown-menu" aria-labelledby="adoptDropdown">
+                                    <!-- 下拉選單項目在這裡 -->
+                                    <li><a class="dropdown-item" href="3-4_govInfo.html">政府補助資訊</a></li>
+                                    <li><a class="dropdown-item" href="3-0_strays_list.html">浪浪領養</a></li>
+                                    <li><a class="dropdown-item" href="3-2_whichStatus.html">填寫問卷</a></li>
+                                    <li><a class="dropdown-item" href="3-3_adoption_process.html">浪浪領養流程及注意事項</a></li>
+                                    <!-- 需要時可新增更多下拉選單項目 -->
+                                </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link pd-navbar-a text-gray" href="#">
+                            <li class="nav-item-catpaw">
+                                <a class="nav-link pd-navbar-a text-gray" href="4-0_knowledge_of_stray.html">
                                     浪浪小學堂
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link pd-navbar-a text-gray" href="index-feedback.html">
+                            <li class="nav-item-catpaw dropdown">
+                                <a class="nav-link pd-navbar-a text-gray dropdown-toggle" href="#" id="faqDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     常見問題
                                 </a>
+                                <ul class="dropdown-menu" aria-labelledby="faqDropdown">
+                                    <!-- 下拉選單項目在這裡 -->
+                                    <li><a class="dropdown-item" href="6-0_FAQ.html">常見問題</a></li>
+                                    <li><a class="dropdown-item" href="6-1_feedback_form.html">建議與回饋</a></li>
+                                    <!-- 需要時可新增更多下拉選單項目 -->
+                                </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link pd-navbar-a text-gray" href="#">
+                            <li class="nav-item-catpaw">
+                                <a class="nav-link text-gray" href="1-1_login_and_SignUp.html" style="padding: 40px 20px">
                                     會員專區
                                 </a>
                             </li>
@@ -116,75 +131,78 @@
                             </div>
                         </div>
                         <!-- <img class="img-fluid" src="material/other/結紮補助-寵物節育補助-1050x675.jpg" alt=""> -->
-                    </div>
-                    <div class="col-5">
-                        <div class="govInfo-details p-2">
-                            <h2 class=" h4 py-2 fw-bold text">
-                                台北市112年家犬貓結紮補助申請
-                            </h2>
-                            <div class="articleContent me-2">
-                                <ul>
-                                    <li>
-                                        <p class="fs-6 text">
-                                            台北市動保處已公告最新年度家犬絕育補助辦法，補助採「先申請，先審核」。替貓狗在 112
-                                            年完成絕育手術之飼主，且寵物已施打晶片、一年內已注射過狂犬病預防注射得辦理。
-                                        </p>
-                                        <ul class="py-2">
-                                            <li>
-                                                <p class="fs-6 text">
-                                                    台北寵物結紮補助時間：~2023/12/20 前或經費用盡為止。
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p class="fs-6 text">
-                                                    申請資格：1. 飼主設籍台北市。2. 寵物已完成寵物登記、狂犬病注射(1年內)、完成絕育手術。
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <p class="fs-6 text">
-                                            寵物類型補助金額公犬貓800元母犬貓1,500元
-                                        </p>
-                                        <ul class="py-2">
-                                            <li>
-                                                <p class="fs-6 text">
-                                                    申請方式：填寫申請單，親送或寄送文件至台北市動物保護處/至台北市市民服務大平台線上申請。
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p class="fs-6 text">
-                                                    匯款時間：於審核通過後，30 日內電匯補助款至飼主帳戶。
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <div class="text-danger">
-                                            <a href="" class="link-danger">前往下載申請書</a>
-                                            ｜
-                                            <a href="" class="link-danger">前往線上申請</a>
-                                        </div>
-
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="back">
-                                <div class="back-mune">
-                                    <button class="btn" type="button">
-                                        <a href="3-4_govInfo.html" class="">返回目錄</a>
-                                    </button>
+                        <div class="col-5">
+                            <div class="govInfo-details p-2">
+                                <h2 class=" h4 py-2 fw-bold text">
+                                    台北市112年家犬貓結紮補助申請
+                                </h2>
+                                <div class="articleContent me-2">
+                                    <ul>
+                                        <li>
+                                            <p class="fs-6 text">
+                                                台北市動保處已公告最新年度家犬絕育補助辦法，補助採「先申請，先審核」。替貓狗在 112
+                                                年完成絕育手術之飼主，且寵物已施打晶片、一年內已注射過狂犬病預防注射得辦理。
+                                            </p>
+                                            <ul class="py-2">
+                                                <li>
+                                                    <p class="fs-6 text">
+                                                        台北寵物結紮補助時間：~2023/12/20 前或經費用盡為止。
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="fs-6 text">
+                                                        申請資格：1. 飼主設籍台北市。2. 寵物已完成寵物登記、狂犬病注射(1年內)、完成絕育手術。
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="fs-6 text">
+                                                寵物類型補助金額公犬貓800元母犬貓1,500元
+                                            </p>
+                                            <ul class="py-2">
+                                                <li>
+                                                    <p class="fs-6 text">
+                                                        申請方式：填寫申請單，親送或寄送文件至台北市動物保護處/至台北市市民服務大平台線上申請。
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="fs-6 text">
+                                                        匯款時間：於審核通過後，30 日內電匯補助款至飼主帳戶。
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="text-danger">
+                                                <a href="" class="link-danger">前往下載申請書</a>
+                                                ｜
+                                                <a href="" class="link-danger">前往線上申請</a>
+                                            </div>
+    
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="back">
+                                    <div class="back-mune">
+                                        <button class="btn" type="button">
+                                            <a href="3-4_govInfo.html" class="">返回目錄</a>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
+    
                         </div>
-
                     </div>
+                    
                 </div>
             </div>
         </div>
-        <footer>
+        <footer class="pt-5">
             <div class="footer">
+                <!-- footer-container ft-mg-t100 -->
                 <div class="ccc">
+                    <!-- text-center -->
                     <div class="text-center">
                         <div class="footer-snslink">
                             <a class="ft-mg-r40" href="#">
@@ -197,14 +215,17 @@
                             </a>
                         </div>
                         <ul class="">
+                            <!-- d-flex justify-content-center text-white ft-mg-x40 -->
                             <li class="">
-                                <a class="" href="#">關於我們</a>
+                                <!-- text-center -->
+                                <!-- text-decoration-none text-white -->
+                                <a class="" href="5-0_aboutus.html">關於我們</a>
                             </li>
                             <li class="">
-                                <a class="" href="#">聯絡我們</a>
+                                <a class="" href="6-1_feedback_form.html">聯絡我們</a>
                             </li>
                             <li class="">
-                                <a class="" href="#">常見問題</a>
+                                <a class="" href="6-0_FAQ.html">常見問題</a>
                             </li>
                             <li class="">
                                 <a class="" href="#">網站條款</a>

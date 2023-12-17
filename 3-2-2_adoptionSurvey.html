@@ -4,53 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>領養適性問卷</title>
     <link rel="stylesheet" href="all.css">
+    <link rel="shortcut icon" href="material/icon/favicon.ico" type="image/x-icon">
 </head>
 <body class="main bg-secondary3">
-    <nav class="navbar navbar-expand-lg sticky-top justify-content-between pad-res-x0">
-        <!-- <div class="container"> -->
+    <nav class="navbar navbar-expand-lg justify-content-between pad-res-x0 sticky" id="navbar-fixed">
         <a class="navbar-brand mar-lef-60" href="#">
-            <!-- style="margin-left: 60px"; -->
-            <img class="xxx" src="material/logo/logo 3.svg" alt="langyuan-logo">
+            <img class="xxx" src="material/logo/logo 3.svg" alt="langyuan-logo" />
         </a>
         <div class="bg-white bd-r-navbar">
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0 pd-navbar-py" style="padding: 0px 40px;">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 pd-navbar-py" style="padding: 0px 40px">
                     <li class="nav-item-catpaw">
-                        <a class="nav-link pd-navbar-a text-gray" href="#">
+                        <a class="nav-link pd-navbar-a text-gray" href="index.html">
                             首頁
                         </a>
                     </li>
                     <li class="nav-item-catpaw">
-                        <a class="nav-link pd-navbar-a text-gray" href="#">
+                        <a class="nav-link pd-navbar-a text-gray" href="5-0_aboutus.html">
                             關於我們
                         </a>
                     </li>
-                    <li class="nav-item-catpaw">
-                        <a class="nav-link pd-navbar-a text-gray" href="#">
+                    <li class="nav-item-catpaw dropdown">
+                        <a class="nav-link pd-navbar-a text-gray dropdown-toggle" href="#" id="adoptDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             浪浪認養
                         </a>
+                        <ul class="dropdown-menu" aria-labelledby="adoptDropdown">
+                            <!-- 下拉選單項目在這裡 -->
+                            <li><a class="dropdown-item" href="3-4_govInfo.html">政府補助資訊</a></li>
+                            <li><a class="dropdown-item" href="3-0_strays_list.html">浪浪領養</a></li>
+                            <li><a class="dropdown-item" href="3-2_whichStatus.html">填寫問卷</a></li>
+                            <li><a class="dropdown-item" href="3-3_adoption_process.html">浪浪領養流程及注意事項</a></li>
+                            <!-- 需要時可新增更多下拉選單項目 -->
+                        </ul>
                     </li>
                     <li class="nav-item-catpaw">
-                        <a class="nav-link pd-navbar-a text-gray" href="#">
+                        <a class="nav-link pd-navbar-a text-gray" href="4-0_knowledge_of_stray.html">
                             浪浪小學堂
                         </a>
                     </li>
-                    <li class="nav-item-catpaw">
-                        <a class="nav-link pd-navbar-a text-gray" href="index-feedback.html">
+                    <li class="nav-item-catpaw dropdown">
+                        <a class="nav-link pd-navbar-a text-gray dropdown-toggle" href="#" id="faqDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             常見問題
                         </a>
+                        <ul class="dropdown-menu" aria-labelledby="faqDropdown">
+                            <!-- 下拉選單項目在這裡 -->
+                            <li><a class="dropdown-item" href="6-0_FAQ.html">常見問題</a></li>
+                            <li><a class="dropdown-item" href="6-1_feedback_form.html">建議與回饋</a></li>
+                            <!-- 需要時可新增更多下拉選單項目 -->
+                        </ul>
                     </li>
                     <li class="nav-item-catpaw">
-                        <a class="nav-link text-gray" href="#" style="padding: 40px 20px;">
+                        <a class="nav-link text-gray" href="1-1_login_and_SignUp.html" style="padding: 40px 20px">
                             會員專區
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
-        <!-- </div> -->
     </nav>
     <div class="container">
         <div class="row justify-content-center border-primary">
@@ -415,6 +427,11 @@
                 </div>
             </div>
     </footer>
+    <div class="footer-text text-center">
+        <p class="">
+            本專題僅為學習用途·不做任何商業使用·圖片來源請見 github repo
+        </p>
+    </div>
     <script>
         function calculateScore() {
             var form = document.getElementById('quizForm');
